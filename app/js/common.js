@@ -58,7 +58,7 @@ RS.activeToggleSiblingsOff = function(){
 RS.svgGlobal = function(){
   new Vue({
     	el: '#global-svg',
-    	template: ''
+    	template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-hamburger" viewBox="0 0 37 32"><title>hamburger</title><path d="M35.434 0h-34.291c-0.63 0-1.143 0.549-1.143 1.221v5.214c0 0.645 0.514 1.172 1.143 1.172h34.291c0.631 0 1.143-0.527 1.143-1.172v-5.214c0-0.672-0.512-1.221-1.143-1.221zM35.434 12.196h-34.291c-0.63 0-1.143 0.549-1.143 1.221v5.215c0 0.646 0.514 1.172 1.143 1.172h34.291c0.631 0 1.143-0.526 1.143-1.172v-5.215c0-0.672-0.512-1.221-1.143-1.221zM35.434 24.391h-34.291c-0.63 0-1.143 0.549-1.143 1.223v5.214c0 0.646 0.514 1.172 1.143 1.172h34.291c0.631 0 1.143-0.526 1.143-1.172v-5.214c0-0.674-0.512-1.223-1.143-1.223z"></path></symbol></defs></svg>'
     })
 };
 

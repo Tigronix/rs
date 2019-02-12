@@ -6,6 +6,12 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 300;
+  padding-left: 111px;
 
   &__delivery {
     font-size: 14px;
@@ -18,7 +24,7 @@
   }
 
   @include atMobile {
-    padding-left: 0;
+    padding: 0 16px;
     height: 41px;
 
     &__delivery {
