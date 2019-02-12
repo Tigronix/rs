@@ -17,12 +17,62 @@
 			<div class="menu__delivery">
 				<span class="menu__delivery__t1">free delivery </span><span class="menu__delivery__t2">up to $200</span>
 			</div>
-			<select name="currency-select" class="menu__currency select">
-				<option value="">$ USD</option>
-				<option value="">EUR</option>
-				<option value="">POUND</option>
-			</select>
+			<div class="select__wrapper">
+				<select name="currency-select" class="menu__currency select">
+					<option value="">$ USD</option>
+					<option value="">EUR</option>
+					<option value="">POUND</option>
+				</select>
+			</div>
 		</div>
+		<header class="page-header wrapper">
+			<a href="#" class="logo">rush <br> shop</a>
+			<nav class="nav page-header__nav">
+				<ul class="nav__ul">
+					<li class="nav__li">
+						<a href="#" class="nav__link">menu</a>
+					</li>
+					<li class="nav__li">
+						<a href="#" class="nav__link">search</a>
+					</li>
+					<li class="nav__li">
+						<a href="#" class="nav__link nav__link--counter">cart <span class="nav__counter">3</span></a>
+					</li>
+				</ul>
+			</nav>
+			<div class="page-header__mobile">
+				<button type="button" class="hamburger page-header__hamburger">
+					<svg class="icon icon-hamburger"><use xlink:href="#icon-hamburger"></use></svg>
+				</button>
+				<a href="#" class="nav__link nav__link--counter nav__link--mobile">cart <span class="nav__counter">3</span></a>
+			</div>
+		</header>
+		<main class="page-main">
+			<section class="main-slider">
+				<div class="main-slider__slider">
+					<div class="main-slider__item js-adaptive-bg wrapper" data-bg-mobile="" data-bg-desktop="img/slider__img--1.jpg">
+						<div class="main-slider__content">
+							<div class="main-slider__header">supreme</div>
+							<div class="main-slider__title">today on sale</div>
+							<button type="button" class="button main-slider__button">discover it</button>
+						</div>
+					</div>
+					<div class="main-slider__item js-adaptive-bg wrapper" data-bg-mobile="" data-bg-desktop="img/slider__img--1.jpg">
+						<div class="main-slider__content">
+							<div class="main-slider__header">supreme 2</div>
+							<div class="main-slider__title">today on sale</div>
+							<button type="button" class="button main-slider__button">discover it</button>
+						</div>
+					</div>
+				</div>
+				<div class="main-slider__counter">
+					<span class="main-slider__current-slide"></span>
+					/
+					<span class="main-slider__last-slide"></span>
+				</div>
+				<div class="main-slider__arrows"></div>
+			</section>
+		</main>
 	</div>
 
 	<script src="js/libs.min.js"></script>
