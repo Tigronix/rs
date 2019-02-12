@@ -5,8 +5,24 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding-left: 30px;
 
   &__delivery {
-    
+    font-size: 14px;
+    color: #9da0a3;
+    text-transform: uppercase;
+  }
+
+  &__delivery__t2 {
+    color: #858b8f;
+  }
+
+  @include atMobile {
+    padding-left: 0;
+    height: 41px;
+
+    &__delivery {
+      font-size: 10px;
+    }
   }
 }

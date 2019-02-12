@@ -1,3 +1,7 @@
 .wrapper {
   padding: 0 83px;
+
+  @include atMobile {
+    padding: 0 16px;
+  }
 }

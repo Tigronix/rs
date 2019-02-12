@@ -1,0 +1,15 @@
+.select {
+  @include arcon;
+  font-size: 14px;
+  color: #fff;
+  background: none;
+  border: none;
+  appearance: none;
+  padding-right: 20px;
+  cursor: pointer;
+
+  &__wrapper {
+    position: relative;
+    background: url(../img/icon-down.png) no-repeat right center;
+  }
+}
