@@ -1,0 +1,81 @@
+.main-slider {
+  position: relative;
+
+  &__item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 624px;
+    padding-top: 253px;
+  }
+
+  &__content {
+    width: 746px;
+    height: 305px;
+    background: rgba(#d5171d, .95);
+    padding-left: 137px;
+    padding-top: 50px;
+  }
+
+  &__header {
+    @include helvetica;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    @include adam;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+  }
+
+  &__button {
+    width: 238px;
+  }
+
+  &__counter {
+    position: absolute;
+    right: 85px;
+    bottom: 29px;
+    @include montserrat;
+    font-size: 18px;
+    color: #c2c2c2;
+  }
+
+  &__current-slide {
+    font-size: 40px;
+  }
+
+  &__arrows {
+    position: absolute;
+    left: 0;
+    top: 389px;
+
+    .slick {
+      &-arrow {
+        font-size: 0;
+        width: 25px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/arrow.png);
+        position: absolute;
+      }
+
+      &-prev {
+        transform: rotate(-180deg);
+        left: 112px;
+      }
+
+      &-next {
+        left: 786px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  box-shadow: inset 0 0 0 1px rgba(#efa5a7, .95);
+  @include akrobat;
+  font-size: 21px;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}

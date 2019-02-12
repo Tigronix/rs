@@ -10,6 +10,44 @@
 	font-family: 'Arcon Rounded';
 }
 
+@mixin helvetica {
+	font-family: 'HelveticaNeueCyr';
+}
+
+@mixin adam {
+	font-family: 'ADAM';
+}
+
+@mixin montserrat {
+	font-family: 'Montserrat';
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-BoldItalic.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ADAM';
+    src: url('../fonts/ADAM.woff2') format('woff2'),
+        url('../fonts/ADAM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 @font-face {
     font-family: 'Akrobat';
     src: url('../fonts/Akrobat-Light.woff2') format('woff2'),
