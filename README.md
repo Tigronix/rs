@@ -1,4 +1,4 @@
-# testjob-freelance
+# RS
 
 npm i - для установки всех зависимостей.
 
