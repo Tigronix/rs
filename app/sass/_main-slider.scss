@@ -7,6 +7,13 @@
     background-position: center;
     height: 624px;
     padding-top: 253px;
+
+    @include atMobile {
+      padding-top: 0;
+      height: 671px;
+      position: relative;
+      text-align: center;
+    };
   }
 
   &__content {
@@ -15,6 +22,16 @@
     background: rgba(#d5171d, .95);
     padding-left: 137px;
     padding-top: 50px;
+
+    @include atMobile{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
+      height: 229px;
+      padding: 17px 40px 50px 40px;
+    };
   }
 
   &__header {
@@ -25,6 +42,11 @@
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @include atMobile{
+      font-size: 40px;
+      margin-bottom: 0;
+    };
   }
 
   &__title {
@@ -33,6 +55,11 @@
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 33px;
+
+    @include atMobile{
+      font-size: 27px;
+      margin-bottom: 15px;
+    };
   }
 
   &__button {
@@ -46,10 +73,22 @@
     @include montserrat;
     font-size: 18px;
     color: #c2c2c2;
+
+    @include atMobile{
+      font-size: 11px;
+      left: 50%;
+      right: auto;
+      bottom: 18px;
+      transform: translateX(-50%);
+    };
   }
 
   &__current-slide {
     font-size: 40px;
+
+    @include atMobile{
+      font-size: 24px;
+    };
   }
 
   &__arrows {
@@ -77,5 +116,32 @@
         left: 786px;
       }
     }
+
+    @include atMobile{
+      left: 16px;
+      top: auto;
+      right: 16px;
+      bottom: 22px;
+      transform: translateX(0);
+      height: 0;
+
+      .slick {
+        &-arrow {
+          transform: translateY(-100%);
+          width: 18px;
+          height: 23px;
+        }
+
+        &-prev {
+          left: 0;
+          transform: rotate(-180deg) translateY(100%);
+        }
+
+        &-next {
+          right: 0;
+          left: auto;
+        }
+      }
+    };
   }
 }
