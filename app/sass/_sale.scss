@@ -1,0 +1,43 @@
+.sale {
+  height: 322px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+
+  &__header {
+    margin-bottom: 6px;
+
+    @include atMobile{
+      width: 129px;
+      margin-bottom: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    };
+  }
+
+  &__desc {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #fff;
+    @include alpha;
+    text-transform: uppercase;
+
+    @include atMobile{
+      font-size: 20px;
+      line-height: 26px;
+    };
+  }
+
+  @include atMobile{
+    height: 215px;
+  };
+}
