@@ -50,6 +50,7 @@ gulp.task('browser-sync', function() {
     server: {
       baseDir: 'app'
     },
+    open: false
   });
 });
 
