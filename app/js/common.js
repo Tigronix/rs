@@ -85,7 +85,8 @@ RS.mainSlider = function(){
     dots: false,
     slidesToShow: 1,
     arrows: true,
-    appendArrows: '.main-slider__arrows'
+    appendArrows: '.main-slider__arrows',
+    infinite: false
   });
 
   $slider.on('afterChange', function(event, slick, currentSlide){
