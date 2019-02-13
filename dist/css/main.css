@@ -110,9 +110,10 @@ ul li {
   list-style: none; }
 
 .global-wrapper {
-  max-width: 1152px;
+  max-width: 1680px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .wrapper {
   padding: 0 83px; }
@@ -426,6 +427,8 @@ ul li {
               background-size: cover;
       background-image: url(../img/arrow.png);
       position: absolute; }
+      .main-slider__arrows .slick-arrow.slick-disabled {
+        opacity: 0.5; }
     .main-slider__arrows .slick-prev {
       -webkit-transform: rotate(-180deg);
           -ms-transform: rotate(-180deg);
