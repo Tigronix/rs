@@ -35,6 +35,24 @@ RS.imgAdaptive = function(){
 
 };
 
+RS.tabs = function videoTabs() {
+    $(document).on('click', '[data-tabclass]', function onClick() {
+        const $this = $(this);
+        const content = $this.data('tabclass');
+        const number = $this.data('tabnumber');
+
+        $('[data-tabclass="' + content + '"]').each(function each() {
+            const $element = $(this);
+
+            if ($element.data('tabnumber') === number) {
+                $element.addClass('active').siblings().removeClass('active');
+            }
+        });
+
+        $('.' + content + ' > [data-tabnumber="' + number + '"]').addClass('active').siblings().removeClass('active');
+    });
+};
+
 RS.activeToggle = function(){
   const $elems = $('.js-active-toggle');
 
@@ -62,7 +80,6 @@ RS.svgGlobal = function(){
     })
 };
 
-// Sliders
 RS.mainSlider = function(){
   const $slider = $('.main-slider__slider');
 
@@ -85,7 +102,8 @@ RS.mainSlider = function(){
     dots: false,
     slidesToShow: 1,
     arrows: true,
-    appendArrows: '.main-slider__arrows'
+    appendArrows: '.main-slider__arrows',
+    infinite: false
   });
 
   $slider.on('afterChange', function(event, slick, currentSlide){
@@ -100,11 +118,27 @@ RS.mainSlider = function(){
   });
 };
 
+RS.catalogBest = function(){
+  const $slider = $('.js-catalog-best-slider');
+
+  $slider.slick({
+    dots: false,
+    slidesToShow: 4,
+    arrows: true,
+    infinite: false
+  });
+};
+
 
 (function onPageReady () {
+  // Вспомогательные
+  RS.tabs();
   RS.svgGlobal();
   RS.imgAdaptive();
   RS.activeToggle();
   RS.activeToggleSiblingsOff();
+
+  // Слайдеры
   RS.mainSlider();
+  RS.catalogBest();
 }());
