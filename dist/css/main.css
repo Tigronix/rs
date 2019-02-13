@@ -110,7 +110,6 @@ ul li {
   list-style: none; }
 
 .global-wrapper {
-  max-width: 1680px;
   margin: 0 auto;
   overflow: hidden;
   position: relative; }
