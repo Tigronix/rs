@@ -64,6 +64,10 @@
 
   &__button {
     width: 238px;
+
+    @include atMobile{
+      display: inline-flex;
+    };
   }
 
   &__counter {
