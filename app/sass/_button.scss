@@ -10,4 +10,13 @@
   line-height: 18px;
   color: #fff;
   text-transform: uppercase;
+
+  &--black {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #000;
+    box-shadow: none;
+  }
 }
