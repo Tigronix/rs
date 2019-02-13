@@ -1,0 +1,145 @@
+.catalog-best {
+  &__header {
+    @include akrobat;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #c3c7ca;
+    margin-bottom: 34px;
+    text-align: center;
+  }
+
+  &__tab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -16px;
+    margin-bottom: 34px;
+  }
+
+  &__tab-btn {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0 16px;
+    padding-bottom: 14px;
+    position: relative;
+    transition: color .2s;
+
+    &:before, &:after{
+      display: block;
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      box-shadow: inset 0 0 0 1px transparent;
+      height: 1px;
+      transition: box-shadow .2s;
+    }
+
+    &:after {
+      bottom: 3px;
+    }
+
+    &.active {
+      color: #d40e14;
+
+      &:before, &:after {
+        box-shadow: inset 0 0 0 1px #b9b9b9;
+      }
+    }
+  }
+
+  &__tab-item {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+
+    &.active {
+      opacity: 1;
+      height: auto;
+      visibility: inherit;
+    }
+  }
+
+  &__item {
+    position: relative;
+    text-decoration: none;
+  }
+
+  &__new, &__sold-out {
+    font-size: 12px;
+    text-align: center;
+    color: #3fa1fb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+
+  &__sold-out {
+    color: #cccccc;
+  }
+
+  &__img {
+    height: 217px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #626567;
+    text-transform: uppercase;
+    max-width: 165px;
+    height: 36px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  &__price {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #a67c52;
+    text-align: center;
+  }
+
+  .slick {
+    &-arrow {
+      font-size: 0;
+      width: 24px;
+      height: 34px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url(../img/arrow-dark.png) no-repeat center;
+      background-size: 100% auto;
+      z-index: 100;
+      transition: opacity .2s;
+
+      &.slick-disabled {
+        opacity: 0.5;
+      }
+    }
+
+    &-prev {
+      right: 100%;
+      transform: rotate(-180deg) translateY(17px);
+    }
+
+    &-next {
+      left: 100%;
+    }
+  }
+}
