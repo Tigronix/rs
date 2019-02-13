@@ -125,7 +125,15 @@ RS.catalogBest = function(){
     dots: false,
     slidesToShow: 4,
     arrows: true,
-    infinite: false
+    infinite: false,
+    responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
   });
 };
 

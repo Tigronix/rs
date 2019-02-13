@@ -106,6 +106,23 @@ button {
   background: none;
   cursor: pointer; }
 
+.h2 {
+  font-family: 'Akrobat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #c3c7ca;
+  margin-bottom: 34px;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .h2 {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #000;
+      margin-bottom: 29px; } }
+
 ul li {
   list-style: none; }
 
@@ -115,7 +132,13 @@ ul li {
   position: relative; }
 
 .wrapper {
-  padding: 0 83px; }
+  padding: 0 83px;
+  margin: 0 auto; }
+  .wrapper--max-width {
+    max-width: 986px; }
+    @media (max-width: 768px) {
+      .wrapper--max-width {
+        max-width: 289px; } }
   @media (max-width: 768px) {
     .wrapper {
       padding: 0 16px; } }
@@ -142,6 +165,14 @@ ul li {
   line-height: 18px;
   color: #fff;
   text-transform: uppercase; }
+  .button--black {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #000;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .menu {
   background: #626567;
@@ -161,13 +192,11 @@ ul li {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 30px;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
-  z-index: 300;
-  padding-left: 111px; }
+  z-index: 300; }
   .menu__delivery {
     font-size: 14px;
     color: #9da0a3;
@@ -333,12 +362,13 @@ ul li {
   color: #fff; }
 
 .main-slider {
-  position: relative; }
+  position: relative;
+  font-size: 0; }
   .main-slider__item {
-    -webkit-background-size: cover;
-            background-size: cover;
+    background-position: right center;
+    -webkit-background-size: contain;
+            background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
     height: 624px;
     padding-top: 253px; }
     @media (max-width: 768px) {
@@ -346,7 +376,8 @@ ul li {
         padding-top: 0;
         height: 671px;
         position: relative;
-        text-align: center; } }
+        text-align: center;
+        background-position: center bottom; } }
   .main-slider__content {
     width: 746px;
     height: 305px;
@@ -508,16 +539,6 @@ ul li {
     .sale {
       height: 215px; } }
 
-.catalog-best__header {
-  font-family: 'Akrobat', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #c3c7ca;
-  margin-bottom: 34px;
-  text-align: center; }
-
 .catalog-best__tab-nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -594,6 +615,10 @@ ul li {
   left: 0;
   top: 0;
   right: 0; }
+  @media (max-width: 768px) {
+    .catalog-best__new, .catalog-best__sold-out {
+      position: static;
+      margin-bottom: 10px; } }
 
 .catalog-best__sold-out {
   color: #cccccc; }
@@ -650,12 +675,76 @@ ul li {
   transition: opacity .2s; }
   .catalog-best .slick-arrow.slick-disabled {
     opacity: 0.5; }
+  @media (max-width: 768px) {
+    .catalog-best .slick-arrow {
+      top: 42%; } }
 
 .catalog-best .slick-prev {
   right: 100%;
   -webkit-transform: rotate(-180deg) translateY(17px);
       -ms-transform: rotate(-180deg) translateY(17px);
           transform: rotate(-180deg) translateY(17px); }
+  @media (max-width: 768px) {
+    .catalog-best .slick-prev {
+      left: -4px;
+      right: auto; } }
 
 .catalog-best .slick-next {
   left: 100%; }
+  @media (max-width: 768px) {
+    .catalog-best .slick-next {
+      left: auto;
+      right: -4px; } }
+
+.catalog-best__button {
+  max-width: 237px;
+  margin: 54px auto; }
+
+.gradient-block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 261px;
+  background: url(../img/grad.png) repeat-x;
+  z-index: 10; }
+
+.catalog-top {
+  background: #f2f2f2;
+  padding: 53px 0 40px 0; }
+  .catalog-top__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 0;
+    text-decoration: none; }
+  .catalog-top__item {
+    position: relative;
+    display: block;
+    font-size: 0;
+    -webkit-background-size: 100% auto;
+            background-size: 100% auto;
+    height: 378px;
+    vertical-align: bottom; }
+  .catalog-top__bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%; }
+  .catalog-top__name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0px;
+    bottom: 30px; }
