@@ -2,6 +2,14 @@
   padding: 0 83px;
   margin: 0 auto;
 
+  &--max-width {
+    max-width: calc(986px + 83px + 83px);
+
+    @include atMobile{
+      max-width: calc(289px + 16px + 16px);
+    };
+  }
+
   @include atMobile {
     padding: 0 16px;
   }
