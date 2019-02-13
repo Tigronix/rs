@@ -27,7 +27,22 @@ button {
 }
 
 .h2 {
+	@include akrobat;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #c3c7ca;
+	margin-bottom: 34px;
+	text-align: center;
 
+	@include atMobile{
+		font-size: 20px;
+		font-weight: 900;
+		letter-spacing: 2px;
+		color: #000;
+		margin-bottom: 29px;
+	};
 }
 
 p {

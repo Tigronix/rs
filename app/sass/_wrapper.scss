@@ -3,10 +3,10 @@
   margin: 0 auto;
 
   &--max-width {
-    max-width: calc(986px + 83px + 83px);
+    max-width: 986px;
 
     @include atMobile{
-      max-width: calc(289px + 16px + 16px);
+      max-width: 289px;
     };
   }
 
