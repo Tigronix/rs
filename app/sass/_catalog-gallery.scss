@@ -122,6 +122,7 @@
   }
 
   &__price-info {
+    @include akrobat;
     font-size: 12px;
     line-height: 18px;
     color: #000;
