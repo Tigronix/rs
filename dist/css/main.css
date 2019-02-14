@@ -842,6 +842,10 @@ ul li {
 .catalog-gallery {
   padding-top: 36px;
   padding-bottom: 27px; }
+  @media (max-width: 1024px) {
+    .catalog-gallery {
+      padding-top: 60px;
+      padding-bottom: 40px; } }
   .catalog-gallery__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -995,3 +999,227 @@ ul li {
       top: 0;
       right: 0;
       width: 100%; } }
+
+.fall-winter-collection {
+  height: 317px;
+  background: no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  margin-bottom: 65px; }
+  @media (max-width: 1024px) {
+    .fall-winter-collection {
+      margin-bottom: 40px; } }
+  .fall-winter-collection__wrapper {
+    padding-left: 140px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%; }
+    @media (max-width: 1024px) {
+      .fall-winter-collection__wrapper {
+        padding-left: 0;
+        padding-top: 115px; } }
+  .fall-winter-collection__content {
+    max-width: 286px;
+    text-align: center; }
+  .fall-winter-collection__header {
+    font-size: 42px;
+    line-height: 33px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'alphabetized cassette tapes';
+    margin-bottom: 30px;
+    text-transform: uppercase; }
+  .fall-winter-collection__btn {
+    width: 130px;
+    margin: 0 auto; }
+
+.gallery {
+  margin-bottom: 30px; }
+  @media (max-width: 1024px) {
+    .gallery {
+      margin-bottom: 1px; } }
+  .gallery__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: -0.5px;
+    padding: 0 3px;
+    font-size: 0; }
+    @media (max-width: 1024px) {
+      .gallery__list {
+        padding: 0; } }
+  .gallery__li {
+    width: -webkit-calc(100% / 6);
+    width: calc(100% / 6);
+    padding: 0.5px; }
+    .gallery__li img {
+      width: 100%;
+      height: auto; }
+    @media (max-width: 1024px) {
+      .gallery__li {
+        width: 50%; } }
+  .gallery__link {
+    display: block;
+    text-decoration: none;
+    position: relative; }
+    .gallery__link:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      -webkit-transition: opacity .3s;
+      -o-transition: opacity .3s;
+      transition: opacity .3s; }
+    .gallery__link:hover:after {
+      opacity: 1; }
+    .gallery__link:hover .gallery__icon {
+      opacity: 1; }
+  .gallery__icon {
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+    z-index: 5; }
+
+.page-footer {
+  height: 130px;
+  background: #000; }
+  @media (max-width: 1024px) {
+    .page-footer {
+      text-align: center;
+      height: auto; } }
+  .page-footer__wrapper {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 45px;
+    padding-bottom: 35px; }
+    @media (max-width: 1024px) {
+      .page-footer__wrapper {
+        display: block; } }
+  .page-footer__logo {
+    margin-right: 60px;
+    display: inline-block; }
+    @media (max-width: 1024px) {
+      .page-footer__logo {
+        margin-right: 0;
+        margin-bottom: 90px; } }
+  .page-footer__menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: 0 -20px; }
+    @media (max-width: 1024px) {
+      .page-footer__menu {
+        display: block;
+        margin: -13px 0;
+        margin-bottom: -webkit-calc(60px - 13px);
+        margin-bottom: calc(60px - 13px); } }
+  .page-footer__menu-li {
+    margin: 0 20px; }
+    @media (max-width: 1024px) {
+      .page-footer__menu-li {
+        display: block;
+        margin: 13px 0; } }
+  .page-footer__menu-link {
+    font-family: 'Akrobat', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none; }
+    .page-footer__menu-link--color-orange {
+      color: #ff921e; }
+  .page-footer__email-sub {
+    margin-left: auto; }
+    @media (max-width: 1024px) {
+      .page-footer__email-sub {
+        margin-bottom: 100px; } }
+  .page-footer__copy {
+    font-size: 8px;
+    line-height: 18px;
+    color: #707070;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    display: none; }
+    @media (max-width: 1024px) {
+      .page-footer__copy {
+        display: block; } }
+
+.email-sub {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  height: 56px; }
+  @media (max-width: 1024px) {
+    .email-sub {
+      display: block;
+      height: auto; } }
+  .email-sub__input {
+    width: 176px;
+    height: 100%;
+    background: #fff;
+    border: none;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 12px; }
+    @media (max-width: 1024px) {
+      .email-sub__input {
+        width: 100%;
+        height: 56px; } }
+  .email-sub__submit {
+    width: 128px;
+    height: 100%;
+    background: #ebebeb;
+    font-family: 'Akrobat', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+    @media (max-width: 1024px) {
+      .email-sub__submit {
+        width: 128px;
+        height: 56px;
+        background: #3d3d3d;
+        color: #000; } }
