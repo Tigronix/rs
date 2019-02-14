@@ -1,0 +1,55 @@
+.choose-side {
+  height: 326px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__header {
+    font-size: 64px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    @include alpha;
+    text-transform: uppercase;
+    color: #fff;
+
+    @include atMobile{
+      text-align: center;
+      max-width: 200px;
+      line-height: 48px;
+    };
+  }
+
+  &__top-text {
+    margin-bottom: 30px;
+
+    @include atMobile{
+
+    };
+  }
+
+  &__bottom-text {
+    display: flex;
+    justify-content: space-between;
+
+    @include atMobile{
+      display: block;
+      font-size: 72px;
+
+      span {
+        display: block;
+      }
+    };
+  }
+
+  &__color-white {
+    color: #fff;
+  }
+
+  &__color-grey {
+    color: #636363;
+  }
+
+  &__color-black {
+    color: #000;
+  }
+}
