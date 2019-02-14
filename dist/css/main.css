@@ -173,7 +173,18 @@ ul li {
   font-size: 21px;
   line-height: 18px;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: background .3s, color .3s, -webkit-box-shadow .1s;
+  transition: background .3s, color .3s, -webkit-box-shadow .1s;
+  -o-transition: background .3s, box-shadow .1s, color .3s;
+  transition: background .3s, box-shadow .1s, color .3s;
+  transition: background .3s, box-shadow .1s, color .3s, -webkit-box-shadow .1s; }
+  @media (min-width: 1025px) {
+    .button:hover {
+      background: #000;
+      color: #fff;
+      -webkit-box-shadow: inset 0 0 0 5px #fff;
+              box-shadow: inset 0 0 0 5px #fff; } }
   .button--black {
     font-size: 12px;
     letter-spacing: 1px;
@@ -181,7 +192,15 @@ ul li {
     text-transform: uppercase;
     background: #000;
     -webkit-box-shadow: none;
-            box-shadow: none; }
+            box-shadow: none;
+    -webkit-box-shadow: inset 0 0 0 0px #000;
+            box-shadow: inset 0 0 0 0px #000; }
+    @media (min-width: 1025px) {
+      .button--black:hover {
+        background: #fff;
+        color: #000;
+        -webkit-box-shadow: inset 0 0 0 5px #000;
+                box-shadow: inset 0 0 0 5px #000; } }
 
 .menu {
   background: #626567;
@@ -595,7 +614,7 @@ ul li {
     transition: box-shadow .2s;
     transition: box-shadow .2s, -webkit-box-shadow .2s; }
   .catalog-best__tab-btn:after {
-    bottom: 3px; }
+    bottom: 2px; }
   .catalog-best__tab-btn.active {
     color: #d40e14; }
     .catalog-best__tab-btn.active:before, .catalog-best__tab-btn.active:after {
@@ -935,7 +954,18 @@ ul li {
       color: #fff;
       border-color: #000;
       font-family: 'Akrobat', sans-serif;
-      font-weight: 500; }
+      font-weight: 500;
+      -webkit-transition: background .3s, color .3s, -webkit-box-shadow .1s;
+      transition: background .3s, color .3s, -webkit-box-shadow .1s;
+      -o-transition: background .3s, color .3s, box-shadow .1s;
+      transition: background .3s, color .3s, box-shadow .1s;
+      transition: background .3s, color .3s, box-shadow .1s, -webkit-box-shadow .1s; }
+      @media (min-width: 1025px) {
+        .catalog-gallery__interactive-block--black:hover {
+          background: #fff;
+          color: #000;
+          -webkit-box-shadow: inset 0 0 0 5px #000;
+                  box-shadow: inset 0 0 0 5px #000; } }
   .catalog-gallery__quantity-wrap {
     color: #000;
     display: -webkit-box;
@@ -951,10 +981,7 @@ ul li {
         -ms-flex-align: center;
             align-items: center; }
   .catalog-gallery__minus, .catalog-gallery__plus {
-    font-size: 24px;
-    -webkit-transform: translateY(4px);
-        -ms-transform: translateY(4px);
-            transform: translateY(4px); }
+    font-size: 24px; }
   .catalog-gallery__count {
     font-family: 'Akrobat', sans-serif;
     font-size: 36px;
@@ -966,7 +993,18 @@ ul li {
     font-size: 12px;
     line-height: 18px;
     color: #000;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    -webkit-transition: background .3s, color .3s, -webkit-box-shadow .1s;
+    transition: background .3s, color .3s, -webkit-box-shadow .1s;
+    -o-transition: background .3s, color .3s, box-shadow .1s;
+    transition: background .3s, color .3s, box-shadow .1s;
+    transition: background .3s, color .3s, box-shadow .1s, -webkit-box-shadow .1s; }
+    @media (min-width: 1025px) {
+      .catalog-gallery__price-info:hover {
+        background: #000;
+        color: #fff;
+        -webkit-box-shadow: inset 0 0 0 5px #fff;
+                box-shadow: inset 0 0 0 5px #fff; } }
   .catalog-gallery__dot {
     margin: 0 18px;
     font-size: 30px;
@@ -1162,9 +1200,18 @@ ul li {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px; }
     .page-footer__menu-link--color-orange {
       color: #ff921e; }
+    @media (min-width: 1025px) {
+      .page-footer__menu-link:hover {
+        color: #ff921e;
+        border-color: #fff; } }
   .page-footer__email-sub {
     margin-left: auto; }
     @media (max-width: 1024px) {
