@@ -2,6 +2,11 @@
   padding-top: 36px;
   padding-bottom: 27px;
 
+  @include atMobile{
+    padding-top: 60px;
+    padding-bottom: 40px;
+  };
+
   &__wrapper {
     display: flex;
     flex-wrap: wrap;

@@ -2,6 +2,11 @@
   height: 317px;
   background: no-repeat center;
   background-size: cover;
+  margin-bottom: 65px;
+
+  @include atMobile{
+    margin-bottom: 40px;
+  };
 
   &__wrapper {
     padding-left: 140px;
