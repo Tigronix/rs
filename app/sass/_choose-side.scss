@@ -3,6 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   &__header {
     font-size: 64px;
@@ -41,15 +44,17 @@
     };
   }
 
-  &__color-white {
-    color: #fff;
-  }
+  @include atMobile{
+    &__color-white {
+      color: #fff;
+    }
 
-  &__color-grey {
-    color: #636363;
-  }
+    &__color-grey {
+      color: #636363;
+    }
 
-  &__color-black {
-    color: #000;
-  }
+    &__color-black {
+      color: #000;
+    }
+  };
 }

@@ -137,16 +137,88 @@ RS.catalogBest = function(){
   });
 };
 
+RS.catalogGalleryQuantity = function(){
+  const $btns = $('.js-catalog-gallery-btn');
+
+  $btns.each(function(){
+    $(this).on('click', function(){
+      RS.quantityCalc($(this));
+    });
+  });
+};
+
+RS.quantityCalc = function($this){
+  const $contentWrap = $this.closest('.js-catalog-gallery-wrap');
+  const $btnMinus = $contentWrap.find('.js-catalog-gallery-minus');
+  const $count = $contentWrap.find('.js-catalog-gallery-count');
+  const $btnPlus = $contentWrap.find('.js-catalog-gallery-plus');
+  const $price = $contentWrap.find('.js-catalog-price');
+  const isMinus = $this.hasClass('js-catalog-gallery-minus');
+  const singleItemPrice = $price.data('catalog-gallery-price');
+  let quantity = $count.html();
+
+  if(isMinus){
+    quantity--;
+
+    if(quantity === 0){
+      quantity = 1;
+    }
+
+    $count.html(quantity);
+  }
+  else{
+    quantity++;
+    $count.html(quantity);
+  }
+
+  const calcSumm = singleItemPrice * quantity;
+
+  $price.html('$' + calcSumm);
+};
+
+RS.catalogGallerySlider = function(){
+  const $slider = $('.catalog-gallery__slider');
+  const $arrPrev = $('.js-catalog-gallert-arrow-prev');
+  const $arrNext = $('.js-catalog-gallert-arrow-next');
+
+  $slider.slick({
+    dots: false,
+    slidesToShow: 1,
+    arrows: false,
+    infinite: false
+  });
+
+  $arrPrev.each(function(){
+    const $parentSlider = $(this).closest('.catalog-gallery__slider');
+
+    $(this).on('click', function(){
+      $parentSlider.slick('slickPrev');
+    });
+  });
+
+  $arrNext.each(function(){
+    const $parentSlider = $(this).closest('.catalog-gallery__slider');
+
+    $(this).on('click', function(){
+      $parentSlider.slick('slickNext');
+    });
+  });
+};
+
 
 (function onPageReady () {
-  // Вспомогательные
-  RS.tabs();
+  // Utility
   RS.svgGlobal();
+  RS.tabs();
   RS.imgAdaptive();
   RS.activeToggle();
   RS.activeToggleSiblingsOff();
 
-  // Слайдеры
+  // Sliders
   RS.mainSlider();
   RS.catalogBest();
+  RS.catalogGallerySlider();
+
+  // Calc
+  RS.catalogGalleryQuantity();
 }());
