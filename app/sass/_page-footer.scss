@@ -1,0 +1,88 @@
+.page-footer {
+  height: 130px;
+  background: #000;
+
+  @include atMobile{
+    text-align: center;
+    height: auto;
+  };
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 35px;
+
+    @include atMobile{
+      display: block;
+    };
+  }
+
+  &__logo {
+    margin-right: 60px;
+    display: inline-block;
+
+    @include atMobile{
+      margin-right: 0;
+      margin-bottom: 90px;
+    };
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+
+    @include atMobile {
+      display: block;
+      margin: -13px 0;
+      margin-bottom: calc(60px - 13px);
+    };
+  }
+
+  &__menu-li {
+    margin: 0 20px;
+
+    @include atMobile{
+      display: block;
+      margin: 13px 0;
+    };
+  }
+
+  &__menu-link {
+    @include akrobat;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    &--color-orange {
+      color: #ff921e;
+    }
+  }
+
+  &__email-sub {
+    margin-left: auto;
+
+    @include atMobile{
+      margin-bottom: 100px;
+    };
+  }
+
+  &__copy {
+    font-size: 8px;
+    line-height: 18px;
+    color: #707070;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    display: none;
+
+    @include atMobile{
+      display: block;
+    };
+  }
+}
