@@ -58,10 +58,20 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
+    transition: color .3s;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
 
     &--color-orange {
       color: #ff921e;
     }
+
+    @include fromVerticalTablet{
+      &:hover {
+        color: #ff921e;
+        border-color: #fff;
+      }
+    };
   }
 
   &__email-sub {
