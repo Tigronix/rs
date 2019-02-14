@@ -7,10 +7,23 @@
     flex-wrap: wrap;
     padding: 0;
     text-decoration: none;
+    margin: 0 -34px;
+
+    @include atMobile{
+      margin: -18px 0;
+      display: block;
+    };
   }
 
   &__li {
+    width: calc(100% / 3);
+    padding: 0 34px;
 
+    @include atMobile{
+      width: 100%;
+      padding: 0;
+      margin: 18px 0;
+    };
   }
 
   &__item {
@@ -18,8 +31,15 @@
     display: block;
     font-size: 0;
     background-size: 100% auto;
+    width: 100%;
     height: 378px;
-    vertical-align: bottom;
+    max-width: 278px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 278px;
+    }
   }
 
   &__bg {
@@ -28,6 +48,8 @@
     bottom: 0;
     right: 0;
     width: 100%;
+    height: auto!important;
+    max-width: 278px;
   }
 
   &__name {

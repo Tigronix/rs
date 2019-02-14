@@ -3,8 +3,8 @@
 const RS = {};
 
 // brakepoints
-RS.fromDesktop = window.matchMedia( "(min-width: 769px)" );
-RS.atMobile = window.matchMedia( "(max-width: 767px)" );
+RS.fromDesktop = window.matchMedia( "(min-width: 1025px)" );
+RS.atMobile = window.matchMedia( "(max-width: 1024px)" );
 
 RS.imgAdaptive = function(){
   const $imgAdaptiveItem = $('.js-adaptive-bg');
@@ -128,7 +128,7 @@ RS.catalogBest = function(){
     infinite: false,
     responsive: [
     {
-      breakpoint: 769,
+      breakpoint: 1025,
       settings: {
         slidesToShow: 1,
       }
