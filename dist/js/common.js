@@ -6,6 +6,7 @@ const RS = {};
 // brakepoints
 RS.fromDesktop = window.matchMedia( "(min-width: 1025px)" );
 RS.atMobile = window.matchMedia( "(max-width: 1024px)" );
+RS.less500 = window.matchMedia("(max-width: 500px)");
 
 RS.svgGlobal = function(){
   new Vue({
@@ -25,7 +26,7 @@ RS.imgAdaptive = function(){
         $(this).css('background-image', 'url("'+ desktopImg +'")');
       }
 
-      if(RS.atMobile.matches){
+      if(RS.less500.matches){
         const atMobileImg = $(this).data('bg-mobile');
 
         $(this).css('background-image', 'url("'+ atMobileImg +'")');
