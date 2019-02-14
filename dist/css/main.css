@@ -415,7 +415,7 @@ ul li {
         font-size: 40px;
         margin-bottom: 0; } }
   .main-slider__title {
-    font-family: 'ADAM';
+    font-family: 'Akrobat', sans-serif;
     font-size: 40px;
     color: #fff;
     text-transform: uppercase;
@@ -962,6 +962,7 @@ ul li {
     width: 64px;
     text-align: center; }
   .catalog-gallery__price-info {
+    font-family: 'Akrobat', sans-serif;
     font-size: 12px;
     line-height: 18px;
     color: #000;
