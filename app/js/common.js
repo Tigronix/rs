@@ -259,6 +259,25 @@ RS.mainMenuToggle = function(){
   });
 };
 
+RS.weeklyTop = function(){
+  const $slider = $('.js-weekly-slider');
+
+  $slider.slick({
+    dots: false,
+    slidesToShow: 2,
+    arrows: true,
+    infinite: false,
+    responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
+  });
+};
+
 (function onPageReady () {
   // Utility
   RS.svgGlobal();
@@ -270,10 +289,12 @@ RS.mainMenuToggle = function(){
 
   // popups
   RS.mainMenuToggle();
+
   // Sliders
   RS.mainSlider();
   RS.catalogBest();
   RS.catalogGallerySlider();
+  RS.weeklyTop();
 
   // Calc
   RS.catalogGalleryQuantity();
