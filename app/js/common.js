@@ -39,9 +39,6 @@ RS.imgAdaptive = function(){
   $(window).on('resize', function(){
     setImg();
   });
-
-
-
 };
 
 RS.tabs = function videoTabs() {
