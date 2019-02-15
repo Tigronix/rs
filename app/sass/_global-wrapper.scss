@@ -1,7 +1,11 @@
 .global-wrapper {
   margin: 0 auto;
   overflow: hidden;
-  position: relative;
+  padding-top: 124px;
+
+  &--no-pdt {
+    padding-top: 0;
+  }
 
   &.js-popup-open {
     position: fixed;

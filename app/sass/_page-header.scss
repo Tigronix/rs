@@ -30,4 +30,48 @@
       margin-bottom: 16px;
     }
   }
+
+  &--black {
+    top: 32px;
+    display: block;
+
+    .logo {
+      font-size: 25px;
+      line-height: 20px;
+      color: #000;
+    }
+
+    .wrapper--max-width {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333333;
+      padding-bottom: 25px;
+    }
+
+    .nav__link {
+      color: #000;
+    }
+
+    @include atMobile{
+      background: #fff;
+      padding: 0 16px;
+
+      .wrapper--max-width {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .page-header {
+        &__mobile {
+          padding-right: 22px;
+        }
+
+        &__hamburger {
+          color: #000;
+        }
+      }
+    };
+  }
 }
