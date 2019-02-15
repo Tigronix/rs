@@ -1,0 +1,31 @@
+.accordion {
+  &__content {
+    padding-left: 40px;
+    display: none;
+
+    @include atMobile{
+      padding-left: 20px;
+    };
+  }
+
+  &__toggle {
+    position: relative;
+    width: 10px;
+    height: 18px;
+  }
+
+  &__close, &__open {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__close {
+    display: none;
+  }
+
+  &__header {
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -13px;
+
+  &__link {
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.5;
+    margin: 0 13px;
+    text-decoration: none;
+    transition: opacity .2s;
+
+    @include fromVerticalTablet{
+      &:hover {
+        opacity: 1;
+      }
+    };
+  }
+}
