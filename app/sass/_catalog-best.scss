@@ -1,4 +1,13 @@
 .catalog-best {
+
+  &--mb-60 {
+    margin-bottom: 60px;
+
+    @include atMobile{
+      margin-bottom: 30px;
+    };
+  }
+
   &__tab-nav {
     display: flex;
     flex-wrap: wrap;

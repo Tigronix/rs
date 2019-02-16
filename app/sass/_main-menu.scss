@@ -94,6 +94,22 @@
     };
   }
 
+  &__accordion-content {
+    position: relative;
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      height: 100%;
+      background: #a5a5a5;
+    }
+  }
+
   &__shop {
     width: 60.24340770791075%;
 
@@ -132,6 +148,15 @@
 
   &__accordion-item {
     margin-bottom: 46px;
+
+    &.active {
+      .main-menu {
+        &__accordion-header {
+          border-bottom: 0px;
+          padding-bottom: 0px;
+        }
+      }
+    }
   }
 
   &__accordion-toggle {
