@@ -1,4 +1,10 @@
 .form-comment {
+  margin-bottom: 40px;
+
+  @include atMobile{
+    margin-bottom: 30px;
+  };
+  
   &__header {
     font-size: 18px;
     line-height: 21px;
