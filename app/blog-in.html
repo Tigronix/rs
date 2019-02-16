@@ -204,27 +204,23 @@
 				</div>
 			</section>
 			<form action="" class="form-comment">
-				<div class="form-comment__header"></div>
-				<div class="form-comment__content">
-					<div class="form-comment__item">
-						<label for="" class="form-comment__label">
+				<div class="wrapper--max-width form-comment__wrapper">
+					<div class="form-comment__header">leave a comment</div>
+					<div class="form-comment__content">
+						<div class="form-comment__item form-comment__item--33">
 							<input type="text" class="form-comment__input" required placeholder="Name">
-						</label>
-					</div>
-					<div class="form-comment__item">
-						<label for="" class="form-comment__label">
+						</div>
+						<div class="form-comment__item form-comment__item--44">
 							<input type="email" class="form-comment__input" required placeholder="Email">
-						</label>
+						</div>
+						<div class="form-comment__item form-comment__item--full-width">
+							<textarea placeholder="Content" class="form-comment__textarea" required></textarea>
+						</div>
 					</div>
-					<div class="form-comment__item form-comment__item--full-width">
-						<label for="" class="form-comment__label">
-							<textarea placeholder="Content" class="form-comment__textarea"></textarea>
-						</label>
+					<div class="form-comment__footer">
+						<div class="form-comment__info">All comments are moderated before being published</div>
+						<button type="submit" class="form-comment__btn button button--black">post</button>
 					</div>
-				</div>
-				<div class="form-comment__footer">
-					<div class="form-comment__info">All comments are moderated before being published</div>
-					<button type="submit" class="form-comment__submit button">post</button>
 				</div>
 			</form>
     </main>

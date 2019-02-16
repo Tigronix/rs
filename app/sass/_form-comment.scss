@@ -1,0 +1,115 @@
+.form-comment {
+  &__header {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+    @include atMobile{
+      margin-bottom: 30px;
+      font-size: 15px;
+      line-height: 19px;
+    };
+  }
+
+  &__wrapper {
+    background: #ebebeb;
+    padding: 0 80px 26px 80px;
+
+    @include atMobile{
+      padding: 0 20px 20px 20px;
+      max-width: 100%;
+      width: 100%;
+    };
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -13px 0;
+
+    @include atMobile{
+      display: block;
+    };
+  }
+
+  &__item {
+    margin: 13px 0;
+
+    &--33 {
+      width: 326px;
+    }
+
+    &--44 {
+      width: 452px;
+    }
+
+    &--full-width {
+      width: 100%;
+    }
+
+    @include atMobile{
+      width: 100%;
+    };
+  }
+
+  &__input {
+    font-size: 16px;
+    color: #707070;
+    padding: 0 15px;
+    border: 1px solid #cfcfcf;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__textarea {
+    width: 100%;
+    @include arcon;
+    font-size: 16px;
+    color: #707070;
+    padding: 15px;
+    border: 1px solid #cfcfcf;
+    min-height: 140px;
+    resize: vertical;
+
+    @include atMobile{
+      min-height: 70px;
+    };
+  }
+
+  &__footer {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include atMobile{
+      display: block;
+    };
+  }
+
+  &__info {
+    font-size: 16px;
+    color: #000;
+
+    @include atMobile{
+      margin-bottom: 15px;
+    };
+  }
+
+  &__btn {
+    width: 130px;
+
+    @include atMobile{
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+    };
+  }
+}

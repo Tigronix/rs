@@ -1,7 +1,8 @@
 .comments {
+
   &__wrapper {
     background: #ebebeb;
-    padding: 56px 40px 24px 40px;
+    padding: 56px 80px 24px 80px;
 
     @include atMobile{
       max-width: 100%;
@@ -20,7 +21,7 @@
 
   &__content {
     margin: -20px 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   &__item {
