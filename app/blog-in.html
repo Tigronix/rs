@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="global-svg"></div>
+	<div class="global-wrapper">
+		<header class="page-header page-header--black">
+      <div class="wrapper--max-width">
+        <a href="index.html" class="logo">rush <br> shop</a>
+  			<nav class="nav page-header__nav">
+  				<ul class="nav__ul">
+  					<li class="nav__li">
+  						<a href="#" class="nav__link js-main-menu-open">menu</a>
+  					</li>
+  					<li class="nav__li">
+  						<a href="#" class="nav__link">search</a>
+  					</li>
+  					<li class="nav__li">
+  						<a href="#" class="nav__link nav__link--counter">cart <span class="nav__counter">3</span></a>
+  					</li>
+  				</ul>
+  			</nav>
+  			<div class="page-header__mobile">
+  				<button type="button" class="hamburger page-header__hamburger js-main-menu-open">
+  					<svg class="icon icon-hamburger"><use xlink:href="#icon-hamburger"></use></svg>
+  				</button>
+  				<a href="#" class="nav__link nav__link--counter nav__link--mobile">cart <span class="nav__counter">3</span></a>
+  			</div>
+      </div>
+		</header>
+		<section class="main-menu js-main-menu">
+			<div class="wrapper--max-width">
+				<div class="main-menu__header">
+					<a href="index.html" class="logo main-menu__logo">rush <br> shop</a>
+					<div class="main-menu__title main-menu__text-styles">main menu</div>
+					<button type="button" class="main-menu__close js-main-menu-close">
+						<svg class="icon icon-close main-menu__close-icon">
+							<use xlink:href="#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="main-menu__content">
+					<div class="main-menu__shop">
+						<div class="main-menu__head"><span>shop</span></div>
+						<div class="js-accordion accordion">
+							<article class="js-accordion-item accordion__item main-menu__accordion-item">
+								<button type="button" class="js-accordion-header main-menu__accordion-header accordion__header main-menu__text-styles">
+									categories
+									<div class="accordion__toggle main-menu__accordion-toggle">
+										<div class="accordion__open">+</div>
+										<div class="accordion__close">-</div>
+									</div>
+								</button>
+								<div class="js-accordion-content accordion__content main-menu__accordion-content">
+									<ul class="main-menu__list">
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">account settins</a></li>
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">history</a></li>
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">get out from my account</a></li>
+									</ul>
+								</div>
+							</article>
+							<article class="js-accordion-item accordion__item main-menu__accordion-item">
+								<button type="button" class="js-accordion-header main-menu__accordion-header accordion__header main-menu__text-styles">
+									popular-colors
+									<div class="accordion__toggle main-menu__accordion-toggle">
+										<div class="accordion__open">+</div>
+										<div class="accordion__close">-</div>
+									</div>
+								</button>
+								<div class="js-accordion-content accordion__content main-menu__accordion-content">
+									<ul class="main-menu__list">
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">black</a></li>
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">grey</a></li>
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">white</a></li>
+									</ul>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="main-menu__account">
+						<div class="main-menu__head">
+							<div class="select__wrapper">
+								<select name="currency-select" class="menu__currency select">
+									<option value="">$ USD</option>
+									<option value="">EUR</option>
+									<option value="">POUND</option>
+								</select>
+							</div>
+
+							<span>account</span>
+						</div>
+						<div class="main-menu__item">
+							<ul class="main-menu__list main-menu__list--right-align">
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">account settings</a></li>
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">history</a></li>
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">get out from my account</a></li>
+							</ul>
+						</div>
+						<div class="main-menu__item">
+							<ul class="main-menu__list main-menu__list--right-align">
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">blog</a></li>
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">about</a></li>
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">faq</a></li>
+							</ul>
+						</div>
+						<div class="social main-menu__social">
+							<a href="#" class="social__link">
+								<svg class="icon icon-vk social__icon">
+									<use xlink:href="#icon-vk"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__link">
+								<svg class="icon icon-instagram social__icon">
+									<use xlink:href="#icon-instagram"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__link">
+								<svg class="icon icon-twitter social__icon">
+									<use xlink:href="#icon-twitter"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<main class="page-main">
+      <section class="blog-in">
+        <div data-bg-mobile="img/fall-winter-bg--mobile.jpg" data-bg-desktop="img/fall-winter-bg--desktop.jpg" class="blog-in__header js-adaptive-bg">
+          <div class="wrapper--max-width">
+            <div class="blog-in__header-text">product</div>
+          </div>
+        </div>
+        <div class="wrapper--max-width blog-in__wrapper-content">
+          <div class="blog-in__content">
+            <div class="blog-in__date">JANUARY 01, 2018</div>
+            <div class="blog-in__title">this girl wear only blue, becouse its her best colour, but not favorite.</div>
+            <div class="blog-in__desc">Double leather pouch suitable for carrying your 13-inch computer and your accessories. Front compartment for your computer and back for your accessories. The double bag can be carried by hand or on the shoulder with his adjustable leather strap. Inner pocket with zip to store your phone or your keys. Made in Italy.</div>
+            <h4>WHY DID YOU START THIS BUSINESS?</h4>
+            <p>Violette: The main idea behind this project is to try to solve a problem that we have : for years we've been looking for an elegant, stylish and functionnal bag to carry our daily devices (MacBook Pro, iPad, iPhone, accessories...). We were looking for a bag that we would be proud to wear. A bag that we could take for a meeting , a class or just a walk in Paris...</p>
+            <img src="img/blog-in__content-img.jpg" alt="">
+            <p>Leo: And after hours of research we realized that the market of this kind of bag was divided in 2 parts :</p>
+            <ul>
+              <li>really high quality bags (some of them in leather), beautiful design but not adapted to our devices (no protections, pockets are too large, can only fit one product, no room for accessories...)</li>
+              <li>OR poor quality bag, poor design but really well thought for devices (protections, fit perfectly your devices, place for chargers , adapters...). All this time spent on searching the perfect bag helped us realized what we truly love.</li>
+            </ul>
+            <p>WHAT IS YOUR EVERYDAY PROCESS FOR CREATING NEW BAGS PEOPLE WILL LOVE</p>
+            <p>Leo: To keep total control of our products, we are the only producers and distributors. 3 steps are mandatory to create the perfect bag:</p>
+            <ol>
+              <li>Creation: all the creative development of Leo and Violette is imagined in our Parisian office. Remaining independent allows us to keep full control over the creation. Thanks to this, we can respond better and faster to your expectations</li>
+              <li>Production: 100% made in Italy. With love. All of our goods are manufactured by the same Napolitan production workshop. Working throughout the year with the same craftsmen and the same materials will guarantee you an optimal quality</li>
+              <li>Distribution: no intermediaries and no wholesalers. So no excessive margins. It's just between you and us. And this is what allows us to offer you a quality product at an affordable price.</li>
+            </ol>
+            <p>WHAT’S THE BIGGEST CHALLENGE FACING LEO ET VIOLETTE RIGHT NOW?</p>
+          </div>
+          <div class="blog-in__footer">
+            <div class="blog-in__author">WRITTEN BY paul cyxapuk</div>
+            <div class="social social--grey blog-in__social">
+              <a href="#" class="social__link">
+                <svg class="icon icon-vk social__icon">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link">
+                <svg class="icon icon-twitter social__icon">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link">
+                <svg class="icon icon-pinterest social__icon"><use xlink:href="#icon-pinterest"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+			<section class="comments">
+				<div class="comments__wrapper wrapper--max-width">
+					<div class="comments__head">2 comments</div>
+					<ul class="comments__content">
+						<li class="comments__item">
+							<div class="comments__header">
+								<span class="comments__header-text">MARCUS</span>
+								<span class="comments__header-date">MARCH 28, 2018</span>
+							</div>
+							<p class="comments__desc">I recently bought one of your bags based on a recommandation from a friend, and I couldn’t be more happy to support you, achieving your long term vision!</p>
+						</li>
+						<li class="comments__item">
+							<div class="comments__header">
+								<span class="comments__header-text">Luke</span>
+								<span class="comments__header-date">MARCH 28, 2018</span>
+							</div>
+							<p class="comments__desc">What an incredible story! Would love to see more posts like this.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<form action="" class="form-comment">
+				<div class="form-comment__header"></div>
+				<div class="form-comment__content">
+					<div class="form-comment__item">
+						<label for="" class="form-comment__label">
+							<input type="text" class="form-comment__input" required placeholder="Name">
+						</label>
+					</div>
+					<div class="form-comment__item">
+						<label for="" class="form-comment__label">
+							<input type="email" class="form-comment__input" required placeholder="Email">
+						</label>
+					</div>
+					<div class="form-comment__item form-comment__item--full-width">
+						<label for="" class="form-comment__label">
+							<textarea placeholder="Content" class="form-comment__textarea"></textarea>
+						</label>
+					</div>
+				</div>
+				<div class="form-comment__footer">
+					<div class="form-comment__info">All comments are moderated before being published</div>
+					<button type="submit" class="form-comment__submit button">post</button>
+				</div>
+			</form>
+    </main>
+		<footer class="page-footer">
+			<div class="page-footer__wrapper wrapper--max-width">
+				<a href="index.html" class="logo page-footer__logo">rush <br> shop</a>
+				<ul class="page-footer__menu">
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link">about us</a></li>
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link page-footer__menu-link--color-orange">shop</a></li>
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link">contacts</a></li>
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link">delivery/returns</a></li>
+				</ul>
+				<form class="email-sub page-footer__email-sub">
+					<input type="email" required class="email-sub__input">
+					<button type="submit" class="email-sub__submit">subscribe</button>
+				</form>
+				<div class="page-footer__copy">copyright by rush shop 2019</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>

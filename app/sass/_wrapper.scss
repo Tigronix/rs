@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   &--max-width {
-    max-width: 986px;
+    width: 986px;
     margin: 0 auto;
 
     @include atMobile{

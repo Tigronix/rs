@@ -1,0 +1,50 @@
+.comments {
+  &__wrapper {
+    background: #ebebeb;
+    padding: 56px 40px 24px 40px;
+
+    @include atMobile{
+      max-width: 100%;
+      width: 100%;
+      padding: 20px;
+    };
+  }
+
+  &__head {
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+
+  &__content {
+    margin: -20px 0;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #cdcdcd;
+    margin: 20px 0;
+  }
+
+  &__header {
+    margin-bottom: 15px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #8c6239;
+  }
+
+  &__desc {
+    @include akrobat;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+  }
+
+  &__header-text {
+    margin-right: 60px;
+  }
+}
