@@ -78,7 +78,7 @@ RS.activeToggleSiblingsOff = function(){
   $elems.each(function(){
     $(this).on('click', function(){
       $(this).toggleClass('active').siblings().removeClass('active');
-      
+
       if(!$(this).hasClass('active')){
         $(this).addClass('active');
       };
@@ -282,6 +282,30 @@ RS.weeklyTop = function(){
   });
 };
 
+RS.fancybox = function(){
+  if($("*").is("[data-fancybox]")){
+      $("[data-fancybox]").fancybox({
+          buttons : [
+              'close'
+          ],
+          thumbs : {
+              autoStart   : true,
+              hideOnClose : true
+          },
+          lang : 'en',
+          i18n : {
+              'en' : {
+                  CLOSE       : 'close',
+                  NEXT        : 'next',
+                  PREV        : 'prev',
+                  ERROR       : 'Error: cant get image',
+              }
+          },
+  		hash: false ,
+      });
+    }
+};
+
 (function onPageReady () {
   // Utility
   RS.svgGlobal();
@@ -290,6 +314,7 @@ RS.weeklyTop = function(){
   RS.activeToggle();
   RS.activeToggleSiblingsOff();
   RS.accordion();
+  RS.fancybox();
 
   // popups
   RS.mainMenuToggle();
