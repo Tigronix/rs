@@ -1,0 +1,70 @@
+.catalog {
+  margin-bottom: 77px;
+
+  @include atMobile{
+    margin-bottom: 30px
+  };
+  
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 75px;
+
+    @include atMobile{
+      display: block;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    };
+  }
+
+  &__submit {
+    @include akrobat;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-left: 60px;
+  }
+
+  &__sort {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  &__grids {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -38px;
+
+    @include atMobile{
+      display: block;
+      margin: -15px 0;
+    };
+  }
+
+  &__li {
+    width: calc(100% / 4);
+    padding: 38px;
+
+    @include atMobile{
+      width: 100%;
+      padding: 0;
+      margin-bottom: 15px;
+    };
+  }
+
+
+}

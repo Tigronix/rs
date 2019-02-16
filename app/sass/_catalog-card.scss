@@ -1,0 +1,59 @@
+.catalog-card {
+  position: relative;
+  padding-top: 20px;
+  text-decoration: none;
+  display: block;
+
+  @include atMobile{
+    padding-top: 0;
+  };
+
+  &__new, &__sold-out {
+    font-size: 12px;
+    text-align: center;
+    color: #3fa1fb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    @include atMobile{
+      position: static;
+      margin-bottom: 10px;
+    };
+  }
+
+  &__sold-out {
+    color: #cccccc;
+  }
+
+  &__img {
+    height: 217px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #626567;
+    text-transform: uppercase;
+    max-width: 165px;
+    height: 36px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  &__price {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #a67c52;
+    text-align: center;
+  }
+}

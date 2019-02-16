@@ -16,4 +16,29 @@
   option {
     color: #000;
   }
+
+  &--grey {
+    padding-right: 10px;
+    @include akrobat;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+    opacity: 0.33;
+
+    option:first-child {
+      display: none;
+    }
+  }
+
+  &__icon-down {
+    font-size: 10px;
+    color: #a3a3a3;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

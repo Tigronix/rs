@@ -1,0 +1,49 @@
+.grids {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -7px;
+  margin-right: -7px;
+
+  &__item {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &.active {
+      .grids {
+        &__rectangle {
+          background: #000;
+        }
+      }
+    }
+
+    &--2 {
+      margin: -1px 7px;
+
+      .grids {
+        &__rectangle {
+          width: 7px;
+          height: 7px;
+          margin: 1px;
+        }
+      }
+    }
+
+    &--3 {
+      margin: -1px 6px;
+
+      .grids {
+        &__rectangle {
+          width: 4px;
+          margin: 1px;
+        }
+      }
+    }
+  }
+
+  &__rectangle {
+    background: #c5c4c4;
+  }
+}
