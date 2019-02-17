@@ -35,6 +35,8 @@
 
   &__logo {
     margin-right: 60px;
+    font-size: 25px;
+    line-height: 20px;
 
     @include atMobile{
       margin-right: 0;
