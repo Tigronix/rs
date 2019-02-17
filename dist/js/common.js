@@ -263,6 +263,37 @@ RS.mainMenuToggle = function(){
   });
 };
 
+RS.searchToggle = function(){
+  const $elem = $('.js-search');
+  const $btnOpen = $('.js-search-open');
+  const $btnClose = $elem.find('.js-search-close');
+  const $globalWrapper = $('.global-wrapper');
+
+  const popupOpen = function(){
+    $elem.slideDown('500');
+    $globalWrapper.addClass('js-popup-open');
+  };
+
+  const popupClose = function(){
+    $elem.slideUp('500');
+    $globalWrapper.removeClass('js-popup-open');
+  };
+
+  $btnOpen.on('click', function(){
+    popupOpen();
+  });
+
+  $btnClose.on('click', function(){
+    popupClose();
+  });
+
+  $(document).on('keydown.js-search', function onKeyDown(evt) {
+      if (evt.keyCode === RS.ESC_CODE) {
+          popupClose();
+      }
+  });
+};
+
 RS.weeklyTop = function(){
   const $slider = $('.js-weekly-slider');
 
@@ -318,6 +349,7 @@ RS.fancybox = function(){
 
   // popups
   RS.mainMenuToggle();
+  RS.searchToggle();
 
   // Sliders
   RS.mainSlider();
