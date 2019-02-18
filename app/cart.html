@@ -12,11 +12,10 @@
 
 <body>
 	<div id="global-svg"></div>
-	<div class="global-wrapper global-wrapper--grey-bg">
-		<header class="page-header page-header--title page-header--black page-header--grey-bg">
+	<div class="global-wrapper">
+		<header class="page-header page-header--black">
       <div class="wrapper--max-width">
         <a href="index.html" class="logo">rush <br> shop</a>
-				<div class="page-header__title">404. page not found</div>
   			<nav class="nav page-header__nav">
   				<ul class="nav__ul">
   					<li class="nav__li">
@@ -214,42 +213,179 @@
         </div>
       </div>
     </section>
-		<main class="page-main page-main--404">
-				<section class="page-404">
-					<div class="page-404__wrapper wrapper--max-width">
-						<div class="page-404__content">
-							<img src="img/404.png" alt="" class="page-404__img">
-							<p>
-								we didn’t find this page, meybe she was delited, or not creared. <br>
-								try to find by <a class="link-blue" href="#">search</a> page, or look at the <a class="link-blue" href="#">main page</a>.
-							</p>
-							<p>if you have a some question, connect to our manager.</p>
-							<button type="button" class="button button--black page-404__button">connect</button>
-							<p>Don't have an account? <a class="link-blue" href="#">Create one</a></p>
+		<main class="page-main">
+			<section class="cart">
+				<div class="wrapper--max-width">
+					<div class="cart__header">
+						<div class="cart__header-text">your cart</div>
+						<a href="#" class="cart__back-to-shop">
+							<svg class="cart__back-to-shop-icon icon icon-cheveron-left"><use xlink:href="#icon-cheveron-left"></use></svg>
+							continue shopping
+						</a>
+					</div>
+					<div class="cart__content">
+						<div class="cart__item cart__item--header">
+							<div class="cart__img"></div>
+							<div class="cart__info"></div>
+							<div class="cart__quantity"><div class="cart__title">quantity</div>	</div>
+							<div class="cart__single-total"><div class="cart__title">total</div></div>
+						</div>
+						<article class="cart__item js-catalog-gallery-wrap">
+							<div class="cart__img"><img src="img/catalog-best__4--desktop.jpg" alt=""></div>
+							<div class="cart__info">
+								<div class="cart__head">LV LE NOUVEAU CARTABLE OLIVE</div>
+								<div class="cart__price">$435</div>
+							</div>
+							<div class="cart__quantity">
+								<div class="cart__quantity-content">
+									<button type="button" class="js-catalog-gallery-btn cart__button js-catalog-gallery-minus">-</button>
+									<div class="cart__count js-catalog-gallery-count">1</div>
+									<button type="button" class="js-catalog-gallery-btn cart__button js-catalog-gallery-plus">+</button>
+								</div>
+							</div>
+							<div class="cart__single-total">
+								<div class="cart__price ">$<span data-catalog-gallery-price="435" class="js-catalog-price">435</span></div>
+							</div>
+							<div class="cart__close">
+								<button type="button" class="cart__close-btn js-catalog-gallery-close">
+									<svg class="cart__close-icon icon icon-close"><use xlink:href="#icon-close"></use></svg>
+								</button>
+							</div>
+						</article>
+						<article class="cart__item js-catalog-gallery-wrap">
+							<div class="cart__img"><img src="img/catalog-best__1--desktop.jpg" alt=""></div>
+							<div class="cart__info">
+								<div class="cart__head">nike supreme boots red light</div>
+								<div class="cart__price">$1200</div>
+							</div>
+							<div class="cart__quantity">
+								<div class="cart__quantity-content">
+									<button type="button" class="js-catalog-gallery-btn cart__button js-catalog-gallery-minus">-</button>
+									<div class="cart__count js-catalog-gallery-count">2</div>
+									<button type="button" class="js-catalog-gallery-btn cart__button js-catalog-gallery-plus">+</button>
+								</div>
+							</div>
+							<div class="cart__single-total">
+								<div class="cart__price">$<span data-catalog-gallery-price="1200" class="js-catalog-price">2400</span></div>
+							</div>
+							<div class="cart__close">
+								<button type="button" class="cart__close-btn js-catalog-gallery-close">
+									<svg class="cart__close-icon icon icon-close"><use xlink:href="#icon-close"></use></svg>
+								</button>
+							</div>
+						</article>
+						<article class="cart__item js-catalog-gallery-wrap">
+							<div class="cart__img"><img src="img/catalog-best__2--desktop.jpg" alt=""></div>
+							<div class="cart__info">
+								<div class="cart__head">stone island burn colored</div>
+								<div class="cart__price">$100</div>
+							</div>
+							<div class="cart__quantity">
+								<div class="cart__quantity-content">
+									<button type="button" class="js-catalog-gallery-btn cart__button js-catalog-gallery-minus">-</button>
+									<div class="cart__count js-catalog-gallery-count">4</div>
+									<button type="button" class="js-catalog-gallery-btn cart__button js-catalog-gallery-plus">+</button>
+								</div>
+							</div>
+							<div class="cart__single-total">
+								<div class="cart__price">$ <span data-catalog-gallery-price="100" class="js-catalog-price">400</span></div>
+							</div>
+							<div class="cart__close">
+								<button type="button" class="cart__close-btn js-catalog-gallery-close">
+									<svg class="cart__close-icon icon icon-close"><use xlink:href="#icon-close"></use></svg>
+								</button>
+							</div>
+						</article>
+					</div>
+					<div class="cart__total">
+						<div class="cart__order-notes">
+							<div class="cart__title">order notes</div>
+							<div class="cart__order-notes-content">
+
+							</div>
+						</div>
+						<div class="cart__total-price">
+							<div class="cart__total-summ">subtotal $<span class="js-total-summ"></span> <span class="cart__value">USD</span></div>
+							<div class="cart__reminder">shipping & taxes calculated checkout</div>
+							<button type="button" class="button button--black">check out</button>
 						</div>
 					</div>
-				</section>
-				<div class="wrapper--max-width">
-					<div class="social social--grey social--404">
-						<a href="#" class="social__link">
-							<svg class="icon icon-vk social__icon">
-								<use xlink:href="#icon-vk"></use>
-							</svg>
-						</a>
-						<a href="#" class="social__link">
-							<svg class="icon icon-instagram social__icon">
-								<use xlink:href="#icon-instagram"></use>
-							</svg>
-						</a>
-						<a href="#" class="social__link">
-							<svg class="icon icon-twitter social__icon">
-								<use xlink:href="#icon-twitter"></use>
-							</svg>
-						</a>
-					</div>
 				</div>
-		</main>
+			</section>
+			<section data-bg-mobile="img/sale-bg--mobile.jpg" data-bg-desktop="img/sale-bg--desktop.jpg" class="sale js-adaptive-bg">
+				<div class="sale__header">
+					<img src="img/sale-header.png" alt="">
+				</div>
+				<div class="sale__desc">on first purchase</div>
+			</section>
+			<section class="catalog-best catalog-best--mb-60 catalog-best__tab-wrapper wrapper wrapper--max-width">
+				<h2 class="h2 h2--grey">RECENTLY VIEWED</h2>
+				<div class="catalog-best__slider js-catalog-best-slider">
+					<a href="#" class="catalog-card">
+						<div class="catalog-card__img"><img src="img/catalog-best__1--desktop.jpg" alt=""></div>
+						<div class="catalog-card__new">new</div>
+						<div class="catalog-card__name">nike Air Foamposite 1 Supreme</div>
+						<div class="catalog-card__price">$1500</div>
+					</a>
+					<a href="#" class="catalog-card">
+						<div class="catalog-card__img"><img src="img/catalog-best__2--desktop.jpg" alt=""></div>
+						<div class="catalog-card__name">stone island colored burn sweetshort</div>
+						<div class="catalog-card__price">$800</div>
+					</a>
+					<a href="#" class="catalog-card">
+						<div class="catalog-card__img"><img src="img/catalog-best__3--desktop.jpg" alt=""></div>
+						<div class="catalog-card__name">furla sweaming bag</div>
+						<div class="catalog-card__price">$250</div>
+					</a>
+					<a href="#" class="catalog-card">
+						<div class="catalog-card__img"><img src="img/catalog-best__4--desktop.jpg" alt=""></div>
+						<div class="catalog-card__sold-out">sold out</div>
+						<div class="catalog-card__name">rayban sunglasses mated coated</div>
+						<div class="catalog-card__price">$170</div>
+					</a>
+					<a href="#" class="catalog-card">
+						<div class="catalog-card__img"><img src="img/catalog-best__1--desktop.jpg" alt=""></div>
+						<div class="catalog-card__new">new</div>
+						<div class="catalog-card__name">nike Air Foamposite 1 Supreme</div>
+						<div class="catalog-card__price">$1500</div>
+					</a>
+					<a href="#" class="catalog-card">
+						<div class="catalog-card__img"><img src="img/catalog-best__2--desktop.jpg" alt=""></div>
+						<div class="catalog-card__name">stone island colored burn sweetshort</div>
+						<div class="catalog-card__price">$800</div>
+					</a>
+					<a href="#" class="catalog-card">
+						<div class="catalog-card__img"><img src="img/catalog-best__3--desktop.jpg" alt=""></div>
+						<div class="catalog-card__name">furla sweaming bag</div>
+						<div class="catalog-card__price">$250</div>
+					</a>
+					<a href="#" class="catalog-card">
+						<div class="catalog-card__img"><img src="img/catalog-best__4--desktop.jpg" alt=""></div>
+						<div class="catalog-card__sold-out">sold out</div>
+						<div class="catalog-card__name">rayban sunglasses mated coated</div>
+						<div class="catalog-card__price">$170</div>
+					</a>
+				</div>
+			</section>
+    </main>
+		<footer class="page-footer">
+			<div class="page-footer__wrapper wrapper--max-width">
+				<a href="index.html" class="logo page-footer__logo">rush <br> shop</a>
+				<ul class="page-footer__menu">
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link">about us</a></li>
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link page-footer__menu-link--color-orange">shop</a></li>
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link">contacts</a></li>
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link">delivery/returns</a></li>
+				</ul>
+				<form class="email-sub page-footer__email-sub">
+					<input type="email" required class="email-sub__input">
+					<button type="submit" class="email-sub__submit">subscribe</button>
+				</form>
+				<div class="page-footer__copy">copyright by rush shop 2019</div>
+			</div>
+		</footer>
 	</div>
+
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
