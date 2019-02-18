@@ -1,4 +1,10 @@
 .cart {
+  margin-bottom: 60px;
+
+  @include atMobile{
+    margin-bottom: 30px;
+  };
+
   &__header {
     display: flex;
     flex-wrap: wrap;
@@ -65,9 +71,11 @@
   }
 
   &__content {
-    padding: 30px 0;
+    padding: 30px 0 30px;
     border: 1px solid #dedede;
     border-width: 1px 0;
+    position: relative;
+    margin-bottom: 34px;
   }
 
   &__item {
@@ -76,7 +84,10 @@
     align-items: center;
     flex-wrap: wrap;
     padding-top: 30px;
-    padding-bottom: 70px;
+
+    &:first-child {
+      padding-top: 0;
+    }
 
     &:after {
       display: block;
@@ -93,15 +104,48 @@
     &--header {
       padding: 0;
       margin: 0;
+      position: absolute;
+      left: 0;
+      top: 30px;
+      right: 0;
 
       &:after {
         display: none;
       }
 
-      .cart__img {
-        height: 0;
+      .cart {
+        &__img {
+          height: 0;
+        }
+
+        &__quantity, &__single-total {
+          padding-top: 0;
+        }
       }
     }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    @include atMobile{
+      padding-bottom: 15px;
+      display: block;
+      margin-bottom: 30px;
+
+      &--header {
+        display: none;
+      }
+
+      &:after {
+        width: 100%;
+      }
+    };
   }
 
   &__img {
@@ -117,31 +161,70 @@
       max-height: 100%;
       height: auto;
     }
+
+    @include atMobile{
+      width: 100%;
+      margin-bottom: 20px;
+    };
   }
 
   &__info {
     width: 285px;
     margin-left: 52px;
+    text-align: center;
+
+    @include atMobile{
+      width: 100%;
+      margin: 0 0 20px;
+    };
   }
 
   &__quantity {
     width: 55px;
     margin-left: 135px;
+
+    @include atMobile {
+      width: 100%;
+      margin: 0 0 20px;
+    };
   }
 
   &__single-total {
     width: 80px;
     margin-left: 108px;
+
+    @include atMobile{
+      width: 100%;
+      margin: 0 0 20px;
+      text-align: center;
+
+      .cart {
+        &__price {
+          display: block;
+        }
+      }
+    };
   }
 
   &__close {
     width: 10px;
     margin-left: auto;
+    align-self: flex-start;
+
+    @include atMobile{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    };
   }
 
   &__quantity, &__single-total, &__close {
     align-self: flex-start;
     padding-top: 67px;
+
+    @include atMobile{
+      padding-top: 0;
+    };
   }
 
   &__head {
@@ -158,6 +241,10 @@
     line-height: 18px;
     color: #a67c52;
     letter-spacing: 1px;
+
+    @include atMobile{
+      display: none;
+    };
   }
 
   &__title {
@@ -178,6 +265,10 @@
     @include akrobat;
     color: #000;
     letter-spacing: 1px;
+
+    @include atMobile {
+      justify-content: center;
+    };
   }
 
   &__count {
@@ -190,5 +281,61 @@
     color: #e44061;
     border: 10px solid transparent;
     transform: translate(-10px, -10px);
+  }
+
+  &__order-notes {
+    width: 492px;
+
+    .cart__title {
+      margin-bottom: 30px;
+    }
+
+    @include atMobile{
+      width: 100%;
+      margin-bottom: 20px;
+    };
+  }
+
+  &__order-notes-content {
+    border: 1px dashed #cbcbcb;
+    border-width: 1px 0;
+    padding: 70px 0;
+  }
+
+  &__total {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include atMobile{
+      display: block;
+    };
+  }
+
+  &__total-price {
+    width: 328px;
+    margin-left: auto;
+    text-align: right;
+
+    @include atMobile{
+      width: 100%;
+    };
+  }
+
+  &__total-summ, &__reminder {
+    @include akrobat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #636363;
+  }
+
+  &__total-summ, &__value {
+    color: #000;
+  }
+
+  &__reminder {
+    margin-bottom: 25px;
   }
 }
