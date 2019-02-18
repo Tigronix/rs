@@ -1,0 +1,29 @@
+.login {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: #e2e2e2;
+  padding-top: 30px;
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #fff;
+  }
+
+  &__logo {
+    font-size: 25px;
+    line-height: 20px;
+    margin-right: 60px;
+  }
+
+  &__link {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+}
