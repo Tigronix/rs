@@ -61,7 +61,13 @@ button {
 }
 
 a {
-
+	@include akrobat;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 1px;
+	color: #0072bc;
+	text-transform: uppercase;
+	opacity: 1;
 }
 
 ul li {

@@ -2,9 +2,14 @@
   margin: 0 auto;
   overflow: hidden;
   padding-top: 124px;
+  min-height: 100vh;
 
   &--no-pdt {
     padding-top: 0;
+  }
+
+  &--grey-bg {
+    background: #e2e2e2;
   }
 
   &.js-popup-open {

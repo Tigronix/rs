@@ -1,0 +1,59 @@
+.page-404 {
+  margin: 90px auto 80px;
+
+  @include atMobile{
+    margin: 40px auto 30px;
+  };
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 123px;
+
+    @include atMobile{
+      margin-bottom: 20px;
+    };
+  }
+
+  p {
+    @include akrobat;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #959595;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include atMobile{
+      margin-bottom: 13px;
+    };
+  }
+
+  &__button {
+    margin-bottom: 67px;
+
+    @include atMobile{
+      margin-bottom: 30px;
+    };
+  }
+
+  &__wrapper {
+    padding-bottom: 87px;
+    border-bottom: 1px solid #919191;
+
+    @include atMobile{
+      padding-bottom: 40px;
+    };
+  }
+
+  &__content {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+}

@@ -74,4 +74,38 @@
       }
     };
   }
+
+  &--title {
+    .wrapper--max-width {
+      justify-content: flex-start;
+
+      @include atMobile{
+        justify-content: space-between;
+      };
+    }
+
+    .page-header {
+      &__title {
+        margin-left: 60px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        color: #000;
+        text-transform: uppercase;
+      }
+
+      &__nav {
+        margin-left: auto;
+      }
+
+      @include atMobile{
+        &__title {
+          display: none;
+        }
+      };
+    }
+  }
+
+  &--grey-bg {
+    background: #e2e2e2;
+  }
 }

@@ -1,0 +1,9 @@
+.page-main {
+  &--404 {
+    padding-bottom: 84px;
+
+    @include atMobile{
+      padding-bottom: 40px;
+    };
+  }
+}

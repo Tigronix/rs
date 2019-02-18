@@ -34,4 +34,21 @@
       }
     }
   }
+
+  &--404 {
+    justify-content: center;
+
+    .social {
+      &__icon {
+        color: #c5c5c5;
+        transition: color .3s;
+
+        @include fromVerticalTablet{
+          &:hover {
+            color: #000
+          }
+        };
+      }
+    }
+  }
 }
