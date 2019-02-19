@@ -1,6 +1,6 @@
 .sale {
-  height: 322px;
-  margin-bottom: 40px;
+  height: 325px;
+  margin-bottom: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
   background-position: center;
 
   &__header {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 
     @include atMobile{
       width: 129px;
@@ -26,7 +26,8 @@
   &__desc {
     font-size: 30px;
     line-height: 40px;
-    letter-spacing: 1px;
+    font-weight: bold;
+    letter-spacing: 3.2px;
     color: #fff;
     @include alpha;
     text-transform: uppercase;

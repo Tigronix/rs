@@ -2,7 +2,7 @@
   height: 317px;
   background: no-repeat center;
   background-size: cover;
-  margin-bottom: 65px;
+  margin-bottom: 59px;
 
   @include atMobile{
     margin-bottom: 40px;
@@ -10,8 +10,7 @@
 
   &__wrapper {
     padding-left: 140px;
-    display: flex;
-    align-items: center;
+    padding-top: 100px;
     height: 100%;
 
     @include atMobile{
@@ -21,17 +20,18 @@
   }
 
   &__content {
-    max-width: 286px;
+    max-width: 296px;
     text-align: center;
   }
 
   &__header {
     font-size: 42px;
+    font-weight: bold;
     line-height: 33px;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
     color: #fff;
     @include alpha;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     text-transform: uppercase;
   }
 

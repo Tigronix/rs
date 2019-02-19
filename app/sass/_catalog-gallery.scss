@@ -1,6 +1,6 @@
 .catalog-gallery {
-  padding-top: 36px;
-  padding-bottom: 27px;
+  padding-top: 37px;
+  padding-bottom: 10px;
 
   @include atMobile{
     padding-top: 60px;
@@ -44,7 +44,7 @@
     line-height: 14px;
     letter-spacing: 1px;
     color: #000;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     text-align: center;
   }
 
@@ -54,7 +54,7 @@
     letter-spacing: 1px;
     text-align: center;
     color: #a67c52;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 
   &__text-block {
@@ -71,7 +71,7 @@
     letter-spacing: 1px;
     @include akrobat;
     font-weight: 500;
-    margin-bottom: 14px;
+    margin-bottom: 6px;
     text-transform: uppercase;
     text-align: center;
   }
@@ -83,7 +83,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
@@ -136,6 +136,7 @@
     color: #000;
     letter-spacing: 1px;
     transition: background .3s, color .3s, box-shadow .1s;
+    margin-bottom: 9px;
 
     @include fromVerticalTablet{
       &:hover {

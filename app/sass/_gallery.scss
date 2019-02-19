@@ -1,6 +1,10 @@
 .gallery {
   margin-bottom: 30px;
 
+  &__h2 {
+    margin-bottom: 40px;
+  }
+
   @include atMobile{
     margin-bottom: 1px;
   };
