@@ -331,6 +331,37 @@ RS.searchToggle = function(){
   });
 };
 
+RS.loginToggle = function(){
+  const $elem = $('.js-login');
+  const $btnOpen = $('.js-login-open');
+  const $btnClose = $elem.find('.js-login-close');
+  const $globalWrapper = $('.global-wrapper');
+
+  const popupOpen = function(){
+    $elem.slideDown('500');
+    $globalWrapper.addClass('js-popup-open');
+  };
+
+  const popupClose = function(){
+    $elem.slideUp('500');
+    $globalWrapper.removeClass('js-popup-open');
+  };
+
+  $btnOpen.on('click', function(){
+    popupOpen();
+  });
+
+  $btnClose.on('click', function(){
+    popupClose();
+  });
+
+  $(document).on('keydown.js-login', function onKeyDown(evt) {
+      if (evt.keyCode === RS.ESC_CODE) {
+          popupClose();
+      }
+  });
+};
+
 RS.weeklyTop = function(){
   const $slider = $('.js-weekly-slider');
 
@@ -387,6 +418,7 @@ RS.fancybox = function(){
   // popups
   RS.mainMenuToggle();
   RS.searchToggle();
+  RS.loginToggle();
 
   // Sliders
   RS.mainSlider();

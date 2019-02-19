@@ -145,10 +145,20 @@ RS.catalogBest = function(){
 
 RS.catalogGalleryQuantity = function(){
   const $btns = $('.js-catalog-gallery-btn');
+  const $btnsClose = $('.js-catalog-gallery-close');
 
   $btns.each(function(){
     $(this).on('click', function(){
       RS.quantityCalc($(this));
+    });
+  });
+
+  $btnsClose.each(function(){
+    $(this).on('click', function(){
+      const $parentItem = $(this).closest('.js-catalog-gallery-wrap');
+      $parentItem.remove();
+
+      RS.calcTotalSumm();
     });
   });
 };
@@ -156,10 +166,10 @@ RS.catalogGalleryQuantity = function(){
 RS.quantityCalc = function($this){
   const $contentWrap = $this.closest('.js-catalog-gallery-wrap');
   const $btnMinus = $contentWrap.find('.js-catalog-gallery-minus');
-  const $count = $contentWrap.find('.js-catalog-gallery-count');
   const $btnPlus = $contentWrap.find('.js-catalog-gallery-plus');
-  const $price = $contentWrap.find('.js-catalog-price');
+  const $count = $contentWrap.find('.js-catalog-gallery-count');
   const isMinus = $this.hasClass('js-catalog-gallery-minus');
+  const $price = $contentWrap.find('.js-catalog-price');
   const singleItemPrice = $price.data('catalog-gallery-price');
   let quantity = $count.html();
 
@@ -179,7 +189,34 @@ RS.quantityCalc = function($this){
 
   const calcSumm = singleItemPrice * quantity;
 
-  $price.html('$' + calcSumm);
+  $price.html(calcSumm);
+  RS.calcTotalSumm();
+};
+
+RS.calcTotalSumm = function(){
+  let $totalPrice = $('.js-total-summ');
+  $totalPrice.html(0);
+
+  $totalPrice.each(function(){
+    const $prices = $('.js-catalog-price');
+    let numbers = [];
+
+    $prices.each(function(){
+      const singleSumm = parseInt($(this).html());
+
+      numbers.push(singleSumm);
+    });
+
+    const getSum = function(total, num) {
+      return total + num;
+    }
+
+    const innerTotalSumm = function(item) {
+      document.querySelector('.js-total-summ').innerHTML = numbers.reduce(getSum);
+    }
+
+    innerTotalSumm();
+  });
 };
 
 RS.catalogGallerySlider = function(){
@@ -357,6 +394,6 @@ RS.fancybox = function(){
   RS.catalogGallerySlider();
   RS.weeklyTop();
 
-  // Calc
+  // Calc. IT must be always last!
   RS.catalogGalleryQuantity();
 }());
