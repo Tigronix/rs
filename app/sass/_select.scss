@@ -7,6 +7,8 @@
   appearance: none;
   padding-right: 20px;
   cursor: pointer;
+  position: relative;
+  z-index: 500;
 
   &__wrapper {
     position: relative;
@@ -18,7 +20,7 @@
   }
 
   &--grey {
-    padding-right: 10px;
+    padding-right: 15px;
     @include akrobat;
     font-size: 12px;
     line-height: 18px;
@@ -26,7 +28,6 @@
     font-weight: 500;
     color: #000;
     text-transform: uppercase;
-    opacity: 0.33;
 
     option:first-child {
       display: none;
@@ -40,5 +41,60 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  &__content-wrap {
+    position: absolute;
+    right: -94px;
+    top: calc(100% + 30px);
+    background: rgba(#262626, 0.95);
+    padding: 57px 0;
+    min-width: 282px;
+    display: flex;
+    justify-content: center;
+    display: none;
+
+    @include atMobile{
+      right: auto;
+      left: 0;
+      top: calc(100% + 15px);
+    };
+  }
+
+  &__content {
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      right: 93px;
+      bottom: 100%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 7.5px 7px 7.5px;
+      border-color: transparent transparent #262626 transparent;
+    }
+
+    @include atMobile{
+      &:after {
+        right: auto;
+        left: 0;
+      }
+    };
+  }
+
+  &__option {
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  .js-select-wrap {
+    &.active {
+      display: flex;
+    }
   }
 }

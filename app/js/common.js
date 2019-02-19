@@ -405,6 +405,40 @@ RS.fancybox = function(){
     }
 };
 
+RS.select = function(){
+  const $elem = $('.js-select');
+  const $value = $elem.find('.js-select-value');
+  const $content = $elem.find('.js-select-wrap');
+  const $options = $elem.find('.js-select-option');
+
+  const openSelect = function(){
+    $content.addClass('active');
+  };
+
+  const closeSelect = function(){
+    $content.removeClass('active');
+  };
+
+  $(document).mouseup(function (e) {
+      var container = $(".js-select");
+
+      if (container.has(e.target).length === 0){
+          $content.removeClass('active');
+      }
+    });
+
+    $value.on('click', function(){
+        openSelect();
+    });
+
+    $options.on('click', function(){
+      const value = $(this).html();
+
+      $value.html(value);
+      closeSelect();
+    });
+};
+
 (function onPageReady () {
   // Utility
   RS.svgGlobal();
@@ -414,6 +448,7 @@ RS.fancybox = function(){
   RS.activeToggleSiblingsOff();
   RS.accordion();
   RS.fancybox();
+  RS.select();
 
   // popups
   RS.mainMenuToggle();

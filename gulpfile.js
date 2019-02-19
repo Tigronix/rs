@@ -30,6 +30,7 @@ gulp.task('scripts', function() {
       'app/libs/jquery/dist/jquery.min.js',
       'app/libs/vue/vue.js',
       'app/libs/slick/js/slick.js',
+      'app/libs/select2/js/select2.min.js',
       'app/libs/fancybox3/js/jquery.fancybox.min.js',
     ])
     .pipe(concat('libs.min.js'))
