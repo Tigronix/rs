@@ -407,15 +407,19 @@ RS.fancybox = function(){
 
 RS.select = function(){
   const $elem = $('.js-select');
-  const $value = $elem.find('.js-select-value');
-  const $content = $elem.find('.js-select-wrap');
   const $options = $elem.find('.js-select-option');
+  const $contents = $('.js-select-wrap');
+  const $values = $('.js-select-value');
 
-  const openSelect = function(){
+  const openSelect = function($this){
+    const $content = $this.siblings('.js-select-wrap');
+
     $content.addClass('active');
   };
 
-  const closeSelect = function(){
+  const closeSelect = function($this){
+    const $content = $this.closest('.js-select-wrap');
+
     $content.removeClass('active');
   };
 
@@ -423,19 +427,20 @@ RS.select = function(){
       var container = $(".js-select");
 
       if (container.has(e.target).length === 0){
-          $content.removeClass('active');
+          $contents.removeClass('active');
       }
     });
 
-    $value.on('click', function(){
-        openSelect();
+    $values.on('click', function(){
+        openSelect($(this));
     });
 
     $options.on('click', function(){
       const value = $(this).html();
+      const $value = $(this).closest('.js-select').find('.js-select-value');
 
       $value.html(value);
-      closeSelect();
+      closeSelect($(this));
     });
 };
 

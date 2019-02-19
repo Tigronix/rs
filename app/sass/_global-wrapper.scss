@@ -1,8 +1,11 @@
+
+
 .global-wrapper {
   margin: 0 auto;
   overflow: hidden;
   padding-top: 124px;
   min-height: 100vh;
+  max-width: 100vw;
 
   &--no-pdt {
     padding-top: 0;

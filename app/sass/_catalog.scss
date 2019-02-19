@@ -58,15 +58,7 @@
     };
   }
 
-  &__submit {
-    @include akrobat;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    color: #000;
-    opacity: 0.5;
-    text-transform: uppercase;
+  &__filter {
     margin-left: 60px;
   }
 

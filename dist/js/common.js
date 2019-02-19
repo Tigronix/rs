@@ -331,6 +331,37 @@ RS.searchToggle = function(){
   });
 };
 
+RS.loginToggle = function(){
+  const $elem = $('.js-login');
+  const $btnOpen = $('.js-login-open');
+  const $btnClose = $elem.find('.js-login-close');
+  const $globalWrapper = $('.global-wrapper');
+
+  const popupOpen = function(){
+    $elem.slideDown('500');
+    $globalWrapper.addClass('js-popup-open');
+  };
+
+  const popupClose = function(){
+    $elem.slideUp('500');
+    $globalWrapper.removeClass('js-popup-open');
+  };
+
+  $btnOpen.on('click', function(){
+    popupOpen();
+  });
+
+  $btnClose.on('click', function(){
+    popupClose();
+  });
+
+  $(document).on('keydown.js-login', function onKeyDown(evt) {
+      if (evt.keyCode === RS.ESC_CODE) {
+          popupClose();
+      }
+  });
+};
+
 RS.weeklyTop = function(){
   const $slider = $('.js-weekly-slider');
 
@@ -374,6 +405,45 @@ RS.fancybox = function(){
     }
 };
 
+RS.select = function(){
+  const $elem = $('.js-select');
+  const $options = $elem.find('.js-select-option');
+  const $contents = $('.js-select-wrap');
+  const $values = $('.js-select-value');
+
+  const openSelect = function($this){
+    const $content = $this.siblings('.js-select-wrap');
+
+    $content.addClass('active');
+  };
+
+  const closeSelect = function($this){
+    const $content = $this.closest('.js-select-wrap');
+
+    $content.removeClass('active');
+  };
+
+  $(document).mouseup(function (e) {
+      var container = $(".js-select");
+
+      if (container.has(e.target).length === 0){
+          $contents.removeClass('active');
+      }
+    });
+
+    $values.on('click', function(){
+        openSelect($(this));
+    });
+
+    $options.on('click', function(){
+      const value = $(this).html();
+      const $value = $(this).closest('.js-select').find('.js-select-value');
+
+      $value.html(value);
+      closeSelect($(this));
+    });
+};
+
 (function onPageReady () {
   // Utility
   RS.svgGlobal();
@@ -383,10 +453,12 @@ RS.fancybox = function(){
   RS.activeToggleSiblingsOff();
   RS.accordion();
   RS.fancybox();
+  RS.select();
 
   // popups
   RS.mainMenuToggle();
   RS.searchToggle();
+  RS.loginToggle();
 
   // Sliders
   RS.mainSlider();
