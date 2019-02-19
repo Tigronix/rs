@@ -413,6 +413,7 @@ RS.select = function(){
 
   const openSelect = function($this){
     const $content = $this.siblings('.js-select-wrap');
+    $contents.removeClass('active');
 
     $content.addClass('active');
   };
