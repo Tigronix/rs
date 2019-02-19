@@ -222,13 +222,13 @@
 					</div>
 					<div class="catalog__header">
 		      	<div class="grids catalog__grids">
-		      		<button type="button" class="grids__item grids__item--2 js-active-toggle-siblings-off">
+		      		<div class="grids__item grids__item--2 js-active-toggle-siblings-off">
 		      			<div class="grids__rectangle"></div>
 		      			<div class="grids__rectangle"></div>
 		      			<div class="grids__rectangle"></div>
 		      			<div class="grids__rectangle"></div>
-		      		</button>
-		      		<button type="button" class="grids__item grids__item--3 js-active-toggle-siblings-off active">
+		      		</div>
+		      		<div class="grids__item grids__item--3 js-active-toggle-siblings-off active">
 		      			<div class="grids__rectangle"></div>
 		      			<div class="grids__rectangle"></div>
 		      			<div class="grids__rectangle"></div>
@@ -238,7 +238,7 @@
 		      			<div class="grids__rectangle"></div>
 		      			<div class="grids__rectangle"></div>
 		      			<div class="grids__rectangle"></div>
-		      		</button>
+		      		</div>
 		      	</div>
 						<div class="pagination">
 							<button class="pagination__btn pagination__btn--prev">
@@ -254,7 +254,7 @@
 								<svg class="icon icon-cheveron-right"><use xlink:href="#icon-cheveron-right"></use></svg>
 							</button>
 						</div>
-						<form class="catalog__sort">
+						<div class="catalog__sort">
 							<div class="select__wrapper">
 								<div class="select js-select select--grey">
 									<div class="select__value js-select-value">sort</div>
@@ -270,8 +270,22 @@
 								</div>
 								<svg class="select__icon-down icon icon-cheveron-down"><use xlink:href="#icon-cheveron-down"></use></svg>
 							</div>
-							<button type="submit" class="catalog__submit">filter</button>
-						</form>
+							<div class="select__wrapper catalog__filter">
+								<div class="select js-select select--grey">
+									<div class="select__value js-select-value">filter</div>
+									<div class="select__content-wrap js-select-wrap">
+										<div class="select__content">
+											<div class="select__option js-select-option">price; low to high</div>
+											<div class="select__option js-select-option">price; high to low</div>
+											<div class="select__option js-select-option">oldest to newest</div>
+											<div class="select__option js-select-option">best sellers</div>
+											<div class="select__option js-select-option">featured</div>
+										</div>
+									</div>
+								</div>
+								<svg class="select__icon-down icon icon-cheveron-down"><use xlink:href="#icon-cheveron-down"></use></svg>
+							</div>
+						</div>
 					</div>
 					<ul class="catalog__list">
 						<li class="catalog__li">

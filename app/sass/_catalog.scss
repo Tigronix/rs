@@ -60,12 +60,20 @@
 
   &__filter {
     margin-left: 60px;
+
+    @include atMobile{
+      margin-left: 0;
+    };
   }
 
   &__sort {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+
+    @include atMobile{
+      flex-direction: column;
+    };
   }
 
   &__grids {

@@ -22,4 +22,8 @@
     right: 0;
     bottom: 0;
   }
+
+  @include atMobile{
+    padding-top: 150px;
+  };
 }
