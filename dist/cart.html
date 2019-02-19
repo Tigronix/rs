@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -33,7 +33,15 @@
   				<button type="button" class="hamburger page-header__hamburger js-main-menu-open">
   					<svg class="icon icon-hamburger"><use xlink:href="#icon-hamburger"></use></svg>
   				</button>
-  				<a href="#" class="nav__link nav__link--counter nav__link--mobile">cart <span class="nav__counter">3</span></a>
+
+					<ul class="nav__ul nav__link--mobile">
+  					<li class="nav__li">
+  						<a href="#" class="nav__link js-search-open">search</a>
+  					</li>
+  					<li class="nav__li">
+  						<a href="cart.html" class="nav__link nav__link--counter">cart <span class="nav__counter">3</span></a>
+  					</li>
+  				</ul>
   			</div>
       </div>
 		</header>
@@ -139,7 +147,7 @@
 					<a href="index.html" class="search__logo logo">
 						rush <br> shop
 					</a>
-					<div class="search__header-text">nike sneakers</div>
+					<input value="nike sneakers" type="search" class="search__header-text">
 					<button class="search__close js-search-close">
 						<svg class="icon icon-close search__close-icon">
 							<use xlink:href="#icon-close"></use>
