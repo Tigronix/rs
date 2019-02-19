@@ -53,6 +53,10 @@
     color: #fff;
     margin-left: auto;
     border: 10px solid transparent;
+
+    @include atMobile{
+      transform: translateX(-20px);
+    };
   }
 
   &__content {
