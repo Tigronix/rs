@@ -39,9 +39,9 @@ button {
 	@include atMobile{
 		font-size: 20px;
 		font-weight: 900;
-		letter-spacing: 2px;
+		letter-spacing: 4px;
 		color: #000;
-		margin-bottom: 29px;
+		margin-bottom: 26px;
 	};
 
 	&--grey {

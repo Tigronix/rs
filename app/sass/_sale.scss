@@ -9,6 +9,10 @@
   background-size: cover;
   background-position: center;
 
+  @include atMobile{
+    margin-bottom: 22px;
+  };
+
   &__header {
     margin-bottom: 8px;
 

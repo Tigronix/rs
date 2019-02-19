@@ -11,10 +11,10 @@
 
     @include atMobile {
       padding-top: 0;
-      height: 671px;
+      height: 521px;
       position: relative;
       text-align: center;
-      background-position: center bottom;
+      background-position: center top;
     };
   }
 
@@ -31,8 +31,8 @@
       bottom: 0;
       right: 0;
       width: 100vw;
-      height: 229px;
-      padding: 17px 40px 50px 40px;
+      height: auto;
+      padding: 19px 40px 50px 40px;
     };
   }
 
@@ -48,7 +48,8 @@
 
     @include atMobile{
       font-size: 40px;
-      margin-bottom: 0;
+      letter-spacing: 5px;
+      margin-bottom: 8px;
     };
   }
 
@@ -63,6 +64,7 @@
     @include atMobile{
       font-size: 27px;
       margin-bottom: 15px;
+      letter-spacing: 2.9px;
     };
   }
 
@@ -71,6 +73,8 @@
 
     @include atMobile{
       display: inline-flex;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
     };
   }
 
@@ -87,7 +91,7 @@
       font-size: 11px;
       left: 50%;
       right: auto;
-      bottom: 18px;
+      bottom: 14px;
       transform: translateX(-50%);
     };
   }
@@ -134,7 +138,7 @@
       left: 16px;
       top: auto;
       right: 16px;
-      bottom: 22px;
+      bottom: 16px;
       transform: translateX(0);
       height: 0;
 
