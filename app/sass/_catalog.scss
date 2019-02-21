@@ -62,7 +62,21 @@
     margin-left: 60px;
 
     @include atMobile{
-      margin-left: 0;
+      margin-left: auto;
+
+      .select {
+        &__content-wrap {
+          left: auto;
+          right: 0;
+        }
+
+        &__content {
+          &:after {
+            left: auto;
+            right: 0;
+          }
+        }
+      }
     };
   }
 
@@ -70,10 +84,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-
-    @include atMobile{
-      flex-direction: column;
-    };
   }
 
   &__grids {
