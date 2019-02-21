@@ -34,6 +34,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include atMobile{
+      height: auto;
+      margin-bottom: 10px;
+    };
   }
 
   &__name {
@@ -47,6 +52,10 @@
     height: 36px;
     margin: 0 auto;
     margin-bottom: 12px;
+
+    @include atMobile{
+      height: auto;
+    };
   }
 
   &__price {

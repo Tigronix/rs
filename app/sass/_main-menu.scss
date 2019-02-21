@@ -80,7 +80,13 @@
 
     @include atMobile{
       padding-bottom: 6px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
+
+      .select {
+        &__wrapper {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
@@ -143,13 +149,17 @@
     border-bottom: 1px solid rgba(#fff, 0.5);
 
     @include atMobile{
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       padding-bottom: 20px;
     };
   }
 
   &__accordion-item {
     margin-bottom: 46px;
+
+    @include atMobile{
+      margin-bottom: 15px;
+    };
 
     &.active {
       .main-menu {
@@ -216,6 +226,11 @@
     padding-bottom: 56px;
     border-bottom: 1px solid rgba(#fff, 0.5);
     margin-bottom: 40px;
+
+    @include atMobile{
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+    };
   }
 
   &__list {

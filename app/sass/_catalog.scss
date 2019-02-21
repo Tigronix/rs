@@ -87,7 +87,9 @@
   }
 
   &__grids {
-    margin-bottom: 20px;
+    @include atMobile{
+      margin-bottom: 20px;
+    }
   }
 
   &__list {
@@ -108,7 +110,7 @@
     @include atMobile{
       width: 100%;
       padding: 0;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     };
   }
 
