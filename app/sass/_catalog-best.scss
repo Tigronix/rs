@@ -78,12 +78,8 @@
       z-index: 100;
       transition: opacity .2s;
 
-      &.slick-disabled {
-        opacity: 0.5;
-      }
-
       @include atMobile{
-        top: 39%;
+        top: 23%;
       };
     }
 
@@ -92,7 +88,7 @@
       transform: rotate(-180deg) translateY(17px);
 
       @include atMobile {
-        left: -4px;
+        left: -12px;
         right: auto;
       };
     }
@@ -102,7 +98,7 @@
 
       @include atMobile{
         left: auto;
-        right: -4px;
+        right: -12px;
       };
     }
   }
@@ -110,5 +106,6 @@
   &__button {
     max-width: 237px;
     margin: 48px auto 52px;
+    display: block;
   }
 }

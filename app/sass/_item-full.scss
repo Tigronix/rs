@@ -4,7 +4,7 @@
   @include atMobile{
     margin-bottom: 20px;
   };
-  
+
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -114,8 +114,8 @@
 
   &__content {
     border: 1px dashed #cbcbcb;
-    border-width: 1px 0 0 0;
-    padding: 32px 0 45px 0;
+    border-width: 1px 0;
+    padding: 19px 0;
 
     p {
       margin-bottom: 18px;
@@ -130,7 +130,6 @@
     font-size: 14px;
     line-height: 14px;
     color: #3b8376;
-    margin-bottom: 30px;
   }
 
   &__accordion {
@@ -143,6 +142,10 @@
 
     &:first-child {
       border-width: 1px 0 1px 0;
+    }
+
+    &:last-child {
+      border-width: 0 0 1px 0;
     }
   }
 

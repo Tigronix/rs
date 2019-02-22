@@ -120,6 +120,18 @@
     height: 388px;
     text-decoration: none;
 
+    @include fromVerticalTablet{
+      &:hover {
+        color: #fff;
+
+        .blog {
+          &__category, &__title {
+            color: #a67c52;
+          }
+        }
+      }
+    };
+
     img {
       width: 100%;
       height: 100%;
@@ -145,6 +157,7 @@
     @include akrobat;
     text-transform: uppercase;
     margin-bottom: 10px;
+    transition: color .3s;
   }
 
   &__title {
@@ -154,6 +167,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 11px;
+    transition: color .3s;
   }
 
   &__desc {

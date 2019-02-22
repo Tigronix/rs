@@ -72,7 +72,6 @@
     width: 238px;
 
     @include atMobile{
-      display: inline-flex;
       letter-spacing: 1px;
       margin-bottom: 3px;
     };
@@ -118,10 +117,6 @@
         background-size: cover;
         background-image: url(../img/arrow.png);
         position: absolute;
-
-        &.slick-disabled {
-          opacity: 0.5;
-        }
       }
 
       &-prev {
