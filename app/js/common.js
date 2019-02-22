@@ -124,6 +124,25 @@ RS.mainSlider = function(){
   });
 };
 
+RS.popupItemSlider = function(){
+  const $slider = $('.popup-item__slider');
+
+  $slider.slick({
+    dots: false,
+    slidesToShow: 5,
+    arrows: true,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
+  });
+};
+
 RS.catalogBest = function(){
   const $slider = $('.js-catalog-best-slider');
 
@@ -367,23 +386,20 @@ RS.popupToggle = function(){
   const $btnOpen = $('.js-popup-open');
   const $btnClose = $elem.find('.js-popup-close');
   const $globalWrapper = $('.global-wrapper');
+  const elemIsFilter = $elem.hasClass('.js-filter');
 
   const popupOpen = function(){
-    $elem.show();
+    $elem.addClass('active');
     $globalWrapper.addClass('js-popup-open blur');
+
+    if(!elemIsFilter){
+      $globalWrapper.removeClass('blur');
+    }
   };
 
   const popupClose = function(){
-    $elem.hide();
-    $globalWrapper.removeClass('js-popup-open');
-
-    $(document).mouseup(function (e) {
-      var container = $elem.find('.js-popup-content');
-
-      if (container.has(e.target).length === 0){
-          $elem.hide();
-      }
-    });
+    $elem.removeClass('active');
+    $globalWrapper.removeClass('js-popup-open blur');
   };
 
   $btnOpen.on('click', function(){
@@ -398,6 +414,15 @@ RS.popupToggle = function(){
       if (evt.keyCode === RS.ESC_CODE) {
           popupClose();
       }
+  });
+
+  $(document).mouseup(function (e) {
+    var container = $elem.find('.js-popup-content');
+
+    if (container.has(e.target).length === 0){
+        $elem.removeClass('active');
+        $globalWrapper.removeClass('js-popup-open blur');
+    }
   });
 };
 
@@ -506,6 +531,7 @@ RS.select = function(){
   RS.catalogBest();
   RS.catalogGallerySlider();
   RS.weeklyTop();
+  RS.popupItemSlider();
 
   // Calc. IT must be always last!
   RS.catalogGalleryQuantity();

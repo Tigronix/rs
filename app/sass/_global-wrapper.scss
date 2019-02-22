@@ -1,5 +1,3 @@
-
-
 .global-wrapper {
   margin: 0 auto;
   overflow: hidden;
@@ -21,6 +19,12 @@
     top: 0;
     right: 0;
     bottom: 0;
+  }
+
+  &.blur {
+    .page-header, .page-main, .page-footer {
+      filter: blur(20px);
+    }
   }
 
   @include atMobile{

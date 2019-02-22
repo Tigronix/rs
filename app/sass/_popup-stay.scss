@@ -12,6 +12,11 @@
   justify-content: center;
   align-items: center;
   z-index: 999;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
 
   &__content {
     background: url(../img/popup-bg.jpg) no-repeat center;
