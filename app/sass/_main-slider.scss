@@ -1,6 +1,7 @@
 .main-slider {
   position: relative;
   font-size: 0;
+  z-index: 50;
 
   &__item {
     background-position: right center;
