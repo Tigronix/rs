@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="global-svg"></div>
+	<div class="global-wrapper">
+		<header class="page-header page-header--black">
+      <div class="wrapper--max-width">
+        <a href="index.html" class="logo">rush <br> shop</a>
+  			<nav class="nav page-header__nav">
+  				<ul class="nav__ul">
+  					<li class="nav__li">
+  						<a href="#" class="nav__link js-main-menu-open">menu</a>
+  					</li>
+  					<li class="nav__li">
+  						<a href="#" class="nav__link js-search-open">search</a>
+  					</li>
+  					<li class="nav__li">
+  						<a href="cart.html" class="nav__link nav__link--counter">cart <span class="nav__counter">3</span></a>
+  					</li>
+  				</ul>
+  			</nav>
+  			<div class="page-header__mobile">
+  				<button type="button" class="hamburger page-header__hamburger js-main-menu-open">
+  					<svg class="icon icon-hamburger"><use xlink:href="#icon-hamburger"></use></svg>
+  				</button>
+					<ul class="nav__ul nav__link--mobile">
+  					<li class="nav__li">
+  						<a href="#" class="nav__link js-search-open">search</a>
+  					</li>
+  					<li class="nav__li">
+  						<a href="cart.html" class="nav__link nav__link--counter">cart <span class="nav__counter">3</span></a>
+  					</li>
+  				</ul>
+  			</div>
+      </div>
+		</header>
+		<section class="main-menu js-main-menu">
+			<div class="wrapper--max-width">
+				<div class="main-menu__header">
+					<a href="index.html" class="logo main-menu__logo">rush <br> shop</a>
+					<div class="main-menu__title main-menu__text-styles">main menu</div>
+					<button type="button" class="main-menu__close js-main-menu-close">
+						<svg class="icon icon-close main-menu__close-icon">
+							<use xlink:href="#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="main-menu__content">
+					<div class="main-menu__shop">
+						<div class="main-menu__head"><span>shop</span></div>
+						<div class="js-accordion accordion">
+							<article class="js-accordion-item accordion__item main-menu__accordion-item">
+								<button type="button" class="js-accordion-header main-menu__accordion-header accordion__header main-menu__text-styles">
+									categories
+									<div class="accordion__toggle main-menu__accordion-toggle">
+										<div class="accordion__open">+</div>
+										<div class="accordion__close">-</div>
+									</div>
+								</button>
+								<div class="js-accordion-content accordion__content main-menu__accordion-content">
+									<ul class="main-menu__list">
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">account settins</a></li>
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">history</a></li>
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">get out from my account</a></li>
+									</ul>
+								</div>
+							</article>
+							<article class="js-accordion-item accordion__item main-menu__accordion-item">
+								<button type="button" class="js-accordion-header main-menu__accordion-header accordion__header main-menu__text-styles">
+									popular-colors
+									<div class="accordion__toggle main-menu__accordion-toggle">
+										<div class="accordion__open">+</div>
+										<div class="accordion__close">-</div>
+									</div>
+								</button>
+								<div class="js-accordion-content accordion__content main-menu__accordion-content">
+									<ul class="main-menu__list">
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">black</a></li>
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">grey</a></li>
+										<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">white</a></li>
+									</ul>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="main-menu__account">
+						<div class="main-menu__head">
+							<div class="select__wrapper">
+								<select name="currency-select" class="menu__currency select">
+									<option value="">$ USD</option>
+									<option value="">EUR</option>
+									<option value="">POUND</option>
+								</select>
+							</div>
+
+							<span>account</span>
+						</div>
+						<div class="main-menu__item">
+							<ul class="main-menu__list main-menu__list--right-align">
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">account settings</a></li>
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">history</a></li>
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">get out from my account</a></li>
+							</ul>
+						</div>
+						<div class="main-menu__item">
+							<ul class="main-menu__list main-menu__list--right-align">
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">blog</a></li>
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">about</a></li>
+								<li class="main-menu__li"><a href="#" class="main-menu__link main-menu__text-styles">faq</a></li>
+							</ul>
+						</div>
+						<div class="social main-menu__social">
+							<a href="#" class="social__link">
+								<svg class="icon icon-vk social__icon">
+									<use xlink:href="#icon-vk"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__link">
+								<svg class="icon icon-instagram social__icon">
+									<use xlink:href="#icon-instagram"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__link">
+								<svg class="icon icon-twitter social__icon">
+									<use xlink:href="#icon-twitter"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="search js-search">
+			<div class="search__header">
+				<div class="search__header-wrapper wrapper--max-width">
+					<a href="index.html" class="search__logo logo">
+						rush <br> shop
+					</a>
+					<input value="nike sneakers" type="search" class="search__header-text">
+					<button class="search__close js-search-close">
+						<svg class="icon icon-close search__close-icon">
+							<use xlink:href="#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+      <div class="wrapper--max-width">
+        <div class="search__content">
+          <div class="search__results">
+            <div class="search__title">20 results</div>
+            <ul class="search__list">
+              <li class="search__list-item">
+                <a href="#" class="search__link">
+                  <div class="search__img"><img src="img/search-result__1.png" alt=""></div>
+                  <div class="search__name">nike Air 1 vinaje edition</div>
+                  <div class="search__price">$700</div>
+                </a>
+              </li>
+              <li class="search__list-item">
+                <a href="#" class="search__link">
+                  <div class="search__img"><img src="img/search-result__2.png" alt=""></div>
+                  <div class="search__name">nike Air Foamposite 1 Supreme</div>
+                  <div class="search__price">$1500</div>
+                </a>
+              </li>
+              <li class="search__list-item">
+                <a href="#" class="search__link">
+                  <div class="search__img"><img src="img/search-result__3.png" alt=""></div>
+                  <div class="search__name">nike Air Foamposite 1 Supreme</div>
+                  <div class="search__price">$1500</div>
+                </a>
+              </li>
+              <li class="search__list-item">
+                <a href="#" class="search__link">
+                  <div class="search__img"><img src="img/search-result__4.png" alt=""></div>
+                  <div class="search__name">nike Air 1 vinaje edition</div>
+                  <div class="search__price">$700</div>
+                </a>
+              </li>
+              <li class="search__list-item">
+                <a href="#" class="search__link">
+                  <div class="search__img"><img src="img/search-result__5.png" alt=""></div>
+                  <div class="search__name">nike Air Foamposite 1 Supreme</div>
+                  <div class="search__price">$1500</div>
+                </a>
+              </li>
+            </ul>
+            <div class="search__title search__title--link"><a href="#" class="search__title-link">view all</a></div>
+          </div>
+          <div class="search__blog">
+            <div class="search__title">blog</div>
+							<div class="search__item">
+	            <ul class="search__text-list">
+	              <li class="search__text-list-li"><a href="#" class="search__text-list-link">nike & supreme made a new colab for sneakers</a></li>
+	              <li class="search__text-list-li"><a href="#" class="search__text-list-link">news from nike</a></li>
+	              <li class="search__text-list-li"><a href="#" class="search__text-list-link">ideal shtorm bag</a></li>
+	            </ul>
+							<div class="search__title search__title--link"><a href="#" class="search__title-link">view all</a></div>
+						</div>
+						<div class="search__item">
+							<div class="search__title">last search</div>
+							<ul class="search__text-list">
+	              <li class="search__text-list-li"><a href="#" class="search__text-list-link">nike & supreme made a new colab for sneakers</a></li>
+	              <li class="search__text-list-li"><a href="#" class="search__text-list-link">news from nike</a></li>
+	              <li class="search__text-list-li"><a href="#" class="search__text-list-link">ideal shtorm bag</a></li>
+	            </ul>
+							<div class="search__title search__title--link"><a href="#" class="search__title-link">view all</a></div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </section>
+		<main class="page-main">
+			<div class="wrapper--max-width">
+				<button type="button" class="button button--black js-popup-open">Open Popup</button>
+			</div>
+      <section class="catalog">
+				<div class="wrapper--max-width">
+					<div class="catalog__header">
+		      	<div class="grids catalog__grids">
+		      		<!-- <div class="grids__item grids__item--2 js-active-toggle-siblings-off">
+		      			<div class="grids__rectangle"></div>
+		      			<div class="grids__rectangle"></div>
+		      			<div class="grids__rectangle"></div>
+		      			<div class="grids__rectangle"></div>
+		      		</div>
+		      		<div class="grids__item grids__item--3 js-active-toggle-siblings-off active">
+		      			<div class="grids__rectangle"></div>
+		      			<div class="grids__rectangle"></div>
+		      			<div class="grids__rectangle"></div>
+		      			<div class="grids__rectangle"></div>
+		      			<div class="grids__rectangle"></div>
+		      			<div class="grids__rectangle"></div>
+		      			<div class="grids__rectangle"></div>
+		      			<div class="grids__rectangle"></div>
+		      			<div class="grids__rectangle"></div>
+		      		</div> -->
+		      	</div>
+						<div class="pagination catalog__pagination">
+							<button class="pagination__btn pagination__btn--prev">
+								<svg class="icon icon-cheveron-left"><use xlink:href="#icon-cheveron-left"></use></svg>
+							</button>
+							<ul class="pagination__content">
+								<li class="pagination__item js-active-toggle-siblings-off active"><button type="button" class="pagination__number">1</button></li>
+								<li class="pagination__item js-active-toggle-siblings-off"><button type="button" class="pagination__number">2</button></li>
+								<li class="pagination__item js-active-toggle-siblings-off"><button type="button" class="pagination__number">3</button></li>
+								<li class="pagination__item js-active-toggle-siblings-off"><button type="button" class="pagination__number">4</button></li>
+							</ul>
+							<button class="pagination__btn pagination__btn--next">
+								<svg class="icon icon-cheveron-right"><use xlink:href="#icon-cheveron-right"></use></svg>
+							</button>
+						</div>
+						<div class="catalog__sort">
+							<div class="select__wrapper">
+								<div class="select js-select select--grey">
+									<div class="select__value js-select-value">sort</div>
+									<div class="select__content-wrap js-select-wrap">
+										<div class="select__content">
+											<div class="select__option js-select-option">price; low to high</div>
+											<div class="select__option js-select-option">price; high to low</div>
+											<div class="select__option js-select-option">oldest to newest</div>
+											<div class="select__option js-select-option">best sellers</div>
+											<div class="select__option js-select-option">featured</div>
+										</div>
+									</div>
+								</div>
+								<svg class="select__icon-down icon icon-cheveron-down"><use xlink:href="#icon-cheveron-down"></use></svg>
+							</div>
+							<div class="select__wrapper catalog__filter">
+								<div class="select js-select select--grey">
+									<div class="select__value js-select-value">filter</div>
+									<div class="select__content-wrap js-select-wrap">
+										<div class="select__content">
+											<div class="select__option js-select-option">price; low to high</div>
+											<div class="select__option js-select-option">price; high to low</div>
+											<div class="select__option js-select-option">oldest to newest</div>
+											<div class="select__option js-select-option">best sellers</div>
+											<div class="select__option js-select-option">featured</div>
+										</div>
+									</div>
+								</div>
+								<svg class="select__icon-down icon icon-cheveron-down"><use xlink:href="#icon-cheveron-down"></use></svg>
+							</div>
+						</div>
+					</div>
+					<ul class="catalog__list">
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__1--desktop.jpg" alt=""></div>
+								<div class="catalog-card__new">new</div>
+								<div class="catalog-card__name">nike Air Foamposite 1 Supreme</div>
+								<div class="catalog-card__price">$1500</div>
+							</a>
+						</li>
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__2--desktop.jpg" alt=""></div>
+								<div class="catalog-card__name">stone island colored burn sweetshort</div>
+								<div class="catalog-card__price">$800</div>
+							</a>
+						</li>
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__3--desktop.jpg" alt=""></div>
+								<div class="catalog-card__name">furla sweaming bag</div>
+								<div class="catalog-card__price">$250</div>
+							</a>
+						</li>
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__4--desktop.jpg" alt=""></div>
+								<div class="catalog-card__sold-out">sold out</div>
+								<div class="catalog-card__name">rayban sunglasses mated coated</div>
+								<div class="catalog-card__price">$170</div>
+							</a>
+						</li>
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__1--desktop.jpg" alt=""></div>
+								<div class="catalog-card__new">new</div>
+								<div class="catalog-card__name">nike Air Foamposite 1 Supreme</div>
+								<div class="catalog-card__price">$1500</div>
+							</a>
+						</li>
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__2--desktop.jpg" alt=""></div>
+								<div class="catalog-card__name">stone island colored burn sweetshort</div>
+								<div class="catalog-card__price">$800</div>
+							</a>
+						</li>
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__3--desktop.jpg" alt=""></div>
+								<div class="catalog-card__name">furla sweaming bag</div>
+								<div class="catalog-card__price">$250</div>
+							</a>
+						</li>
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__4--desktop.jpg" alt=""></div>
+								<div class="catalog-card__sold-out">sold out</div>
+								<div class="catalog-card__name">rayban sunglasses mated coated</div>
+								<div class="catalog-card__price">$170</div>
+							</a>
+						</li>
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__1--desktop.jpg" alt=""></div>
+								<div class="catalog-card__new">new</div>
+								<div class="catalog-card__name">nike Air Foamposite 1 Supreme</div>
+								<div class="catalog-card__price">$1500</div>
+							</a>
+						</li>
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__2--desktop.jpg" alt=""></div>
+								<div class="catalog-card__name">stone island colored burn sweetshort</div>
+								<div class="catalog-card__price">$800</div>
+							</a>
+						</li>
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__3--desktop.jpg" alt=""></div>
+								<div class="catalog-card__name">furla sweaming bag</div>
+								<div class="catalog-card__price">$250</div>
+							</a>
+						</li>
+						<li class="catalog__li">
+							<a href="#" class="catalog-card">
+								<div class="catalog-card__img"><img src="img/catalog-best__4--desktop.jpg" alt=""></div>
+								<div class="catalog-card__sold-out">sold out</div>
+								<div class="catalog-card__name">rayban sunglasses mated coated</div>
+								<div class="catalog-card__price">$170</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+      </section>
+    </main>
+		<footer class="page-footer">
+			<div class="page-footer__wrapper wrapper--max-width">
+				<a href="index.html" class="logo page-footer__logo">rush <br> shop</a>
+				<ul class="page-footer__menu">
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link">about us</a></li>
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link page-footer__menu-link--color-orange">shop</a></li>
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link">contacts</a></li>
+					<li class="page-footer__menu-li"><a href="#" class="page-footer__menu-link">delivery/returns</a></li>
+				</ul>
+				<form class="email-sub page-footer__email-sub">
+					<input type="email" required class="email-sub__input">
+					<button type="submit" class="email-sub__submit">subscribe</button>
+				</form>
+				<div class="page-footer__copy">copyright by rush shop 2019</div>
+			</div>
+		</footer>
+    <div class="popup-stay js-popup js-filter">
+      <div class="popup-stay__content js-popup-content">
+        <div class="popup-stay__header">
+          stay <span>rush</span> with us
+        </div>
+        <div class="popup-stay__sale">up to <span>40% </span> off!</div>
+        <div class="popup-stay__btns">
+          <button type="button" class="button button--black popup-stay__button">sign me up</button>
+          <button type="button" class="button button--orange popup-stay__button">call a police</button>
+        </div>
+        <button type="button" class="js-popup-close popup-stay__close"></button>
+      </div>
+    </div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>

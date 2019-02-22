@@ -124,6 +124,25 @@ RS.mainSlider = function(){
   });
 };
 
+RS.popupItemSlider = function(){
+  const $slider = $('.popup-item__slider');
+
+  $slider.slick({
+    dots: false,
+    slidesToShow: 5,
+    arrows: true,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
+  });
+};
+
 RS.catalogBest = function(){
   const $slider = $('.js-catalog-best-slider');
 
@@ -362,6 +381,51 @@ RS.loginToggle = function(){
   });
 };
 
+RS.popupToggle = function(){
+  const $elem = $('.js-popup');
+  const $btnOpen = $('.js-popup-open');
+  const $btnClose = $elem.find('.js-popup-close');
+  const $globalWrapper = $('.global-wrapper');
+  const elemIsFilter = $elem.hasClass('.js-filter');
+
+  const popupOpen = function(){
+    $elem.addClass('active');
+    $globalWrapper.addClass('js-popup-open blur');
+
+    if(!elemIsFilter){
+      $globalWrapper.removeClass('blur');
+    }
+  };
+
+  const popupClose = function(){
+    $elem.removeClass('active');
+    $globalWrapper.removeClass('js-popup-open blur');
+  };
+
+  $btnOpen.on('click', function(){
+    popupOpen();
+  });
+
+  $btnClose.on('click', function(){
+    popupClose();
+  });
+
+  $(document).on('keydown.js-popup', function onKeyDown(evt) {
+      if (evt.keyCode === RS.ESC_CODE) {
+          popupClose();
+      }
+  });
+
+  $(document).mouseup(function (e) {
+    var container = $elem.find('.js-popup-content');
+
+    if (container.has(e.target).length === 0){
+        $elem.removeClass('active');
+        $globalWrapper.removeClass('js-popup-open blur');
+    }
+  });
+};
+
 RS.weeklyTop = function(){
   const $slider = $('.js-weekly-slider');
 
@@ -460,12 +524,14 @@ RS.select = function(){
   RS.mainMenuToggle();
   RS.searchToggle();
   RS.loginToggle();
+  RS.popupToggle();
 
   // Sliders
   RS.mainSlider();
   RS.catalogBest();
   RS.catalogGallerySlider();
   RS.weeklyTop();
+  RS.popupItemSlider();
 
   // Calc. IT must be always last!
   RS.catalogGalleryQuantity();
