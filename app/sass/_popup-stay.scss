@@ -1,0 +1,107 @@
+.popup-stay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(#000, .69);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  &__content {
+    background: url(../img/popup-bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 541px;
+    height: 404px;
+    padding-top: 28px;
+    position: relative;
+
+    @include atMobile{
+      width: 300px;
+      height: auto;
+      padding: 28px 0;
+    };
+  }
+
+  &__header {
+    font-size: 15px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 63px;
+
+    @include atMobile{
+      margin-bottom: 30px;
+    };
+
+    span {
+      @include alpha;
+      font-size: 112px;
+      display: block;
+      line-height: 90px;
+      font-weight: bold;
+      -webkit-text-stroke-width: 7px;
+     -webkit-text-stroke-color: black;
+       margin: 10px 0 11px;
+       letter-spacing: 15px;
+       transform: translateX(7px);
+
+       @include atMobile{
+         font-size: 80px;
+         line-height: 50px;
+         -webkit-text-stroke-width: 3px
+       };
+    }
+  }
+
+  &__sale {
+    font-size: 20px;
+    line-height: 18px;
+    color: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 63px;
+
+    @include atMobile{
+      margin-bottom: 30px;
+    };
+
+    span {
+      color: #d40e14;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  &__button {
+    width: 106px;
+    margin: 0 10px;
+  }
+
+  &__close {
+    width: 32px;
+    height: 32px;
+    background: url(../img/popup-close.png) no-repeat center;
+    background-size: 100% auto;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    display: block;
+
+    @include atMobile{
+      right: 0;
+    };
+  }
+}

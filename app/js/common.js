@@ -362,6 +362,45 @@ RS.loginToggle = function(){
   });
 };
 
+RS.popupToggle = function(){
+  const $elem = $('.js-popup');
+  const $btnOpen = $('.js-popup-open');
+  const $btnClose = $elem.find('.js-popup-close');
+  const $globalWrapper = $('.global-wrapper');
+
+  const popupOpen = function(){
+    $elem.show();
+    $globalWrapper.addClass('js-popup-open blur');
+  };
+
+  const popupClose = function(){
+    $elem.hide();
+    $globalWrapper.removeClass('js-popup-open');
+
+    $(document).mouseup(function (e) {
+      var container = $elem.find('.js-popup-content');
+
+      if (container.has(e.target).length === 0){
+          $elem.hide();
+      }
+    });
+  };
+
+  $btnOpen.on('click', function(){
+    popupOpen();
+  });
+
+  $btnClose.on('click', function(){
+    popupClose();
+  });
+
+  $(document).on('keydown.js-popup', function onKeyDown(evt) {
+      if (evt.keyCode === RS.ESC_CODE) {
+          popupClose();
+      }
+  });
+};
+
 RS.weeklyTop = function(){
   const $slider = $('.js-weekly-slider');
 
@@ -460,6 +499,7 @@ RS.select = function(){
   RS.mainMenuToggle();
   RS.searchToggle();
   RS.loginToggle();
+  RS.popupToggle();
 
   // Sliders
   RS.mainSlider();
