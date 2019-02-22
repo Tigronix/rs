@@ -609,7 +609,8 @@ ul li {
 
 .main-slider {
   position: relative;
-  font-size: 0; }
+  font-size: 0;
+  z-index: 50; }
   .main-slider__item {
     background-position: right center;
     -webkit-background-size: contain;
@@ -908,7 +909,11 @@ ul li {
   right: 0;
   width: 100%;
   height: 261px;
-  background: url(../img/grad.png) repeat-x;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0.6)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
   z-index: 10; }
 
 .catalog-top {
