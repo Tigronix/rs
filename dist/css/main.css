@@ -3774,9 +3774,10 @@ ul li {
     border: 1px dashed #cbcbcb;
     border-width: 1px 0; }
     .popup-item__desc-block p {
-      font-size: 11px;
-      line-height: 14px;
-      color: #363636;
+      font-family: 'Akrobat', sans-serif;
+      font-size: 14px;
+      line-height: 21px;
+      color: #000;
       margin-bottom: 13px; }
       .popup-item__desc-block p:last-child {
         margin-bottom: 0; }
