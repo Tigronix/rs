@@ -476,7 +476,7 @@ RS.select = function(){
   const $values = $('.js-select-value');
 
   const openSelect = function($this){
-    const $content = $this.siblings('.js-select-wrap');
+    const $content = $this.find('.js-select-wrap');
     $contents.removeClass('active');
 
     $content.addClass('active');
@@ -496,7 +496,8 @@ RS.select = function(){
       }
     });
 
-    $values.on('click', function(){
+    $elem.on('click', function(){
+        console.log($(this));
         openSelect($(this));
     });
 
