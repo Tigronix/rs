@@ -69,17 +69,16 @@
     &-arrow {
       font-size: 0;
       width: 24px;
-      height: 34px;
+      height: 202px;
       position: absolute;
-      top: 45%;
-      transform: translateY(-50%);
+      top: 38px;
       background: url(../img/arrow-dark.png) no-repeat center;
       background-size: 100% auto;
       z-index: 100;
       transition: opacity .2s;
 
       @include atMobile{
-        top: 23%;
+        height: 34px;
       };
     }
 
@@ -90,15 +89,18 @@
       @include atMobile {
         left: -12px;
         right: auto;
+        top: 24%;
       };
     }
 
     &-next {
       left: calc(100% + 30px);
+      top: 21px;
 
       @include atMobile{
         left: auto;
         right: -12px;
+        top: 16%;
       };
     }
   }
