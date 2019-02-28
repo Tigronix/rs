@@ -869,12 +869,9 @@ ul li {
 .catalog-best .slick-arrow {
   font-size: 0;
   width: 24px;
-  height: 34px;
+  height: 202px;
   position: absolute;
-  top: 45%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 38px;
   background: url(../img/arrow-dark.png) no-repeat center;
   -webkit-background-size: 100% auto;
           background-size: 100% auto;
@@ -884,7 +881,7 @@ ul li {
   transition: opacity .2s; }
   @media (max-width: 1024px) {
     .catalog-best .slick-arrow {
-      top: 23%; } }
+      height: 34px; } }
 
 .catalog-best .slick-prev {
   right: -webkit-calc(100% + 30px);
@@ -895,15 +892,18 @@ ul li {
   @media (max-width: 1024px) {
     .catalog-best .slick-prev {
       left: -12px;
-      right: auto; } }
+      right: auto;
+      top: 24%; } }
 
 .catalog-best .slick-next {
   left: -webkit-calc(100% + 30px);
-  left: calc(100% + 30px); }
+  left: calc(100% + 30px);
+  top: 21px; }
   @media (max-width: 1024px) {
     .catalog-best .slick-next {
       left: auto;
-      right: -12px; } }
+      right: -12px;
+      top: 16%; } }
 
 .catalog-best__button {
   max-width: 237px;
