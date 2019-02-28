@@ -893,7 +893,7 @@ ul li {
     .catalog-best .slick-prev {
       left: -12px;
       right: auto;
-      top: 24%; } }
+      top: 59px; } }
 
 .catalog-best .slick-next {
   left: -webkit-calc(100% + 30px);
@@ -903,7 +903,7 @@ ul li {
     .catalog-best .slick-next {
       left: auto;
       right: -12px;
-      top: 16%; } }
+      top: 42px; } }
 
 .catalog-best__button {
   max-width: 237px;
