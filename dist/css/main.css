@@ -310,6 +310,11 @@ ul li {
     text-transform: uppercase; }
     .select--grey option:first-child {
       display: none; }
+  .select--desktop-left .select__content-wrap {
+    left: 0;
+    right: auto; }
+  .select--desktop-left .select__content:after {
+    left: 0; }
   .select__icon-down {
     font-size: 10px;
     color: #a3a3a3;
