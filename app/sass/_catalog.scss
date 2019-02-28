@@ -113,5 +113,20 @@
     };
   }
 
+  &__select {
+    &--desktop {
+      @include atMobile{
+        display: none;
+      };
+    }
 
+    &--mobile {
+      display: none;
+
+      @include atMobile{
+        display: block;
+        margin-left: 30px;
+      };
+    }
+  }
 }
