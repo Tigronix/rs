@@ -44,6 +44,21 @@
     }
   }
 
+  &--desktop-left {
+    .select {
+      &__content-wrap {
+        left: 0;
+        right: auto;
+      }
+
+      &__content {
+        &:after {
+          left: 0;
+        }
+      }
+    }
+  }
+
   &__icon-down {
     font-size: 10px;
     color: #a3a3a3;
