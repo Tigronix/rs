@@ -1,5 +1,6 @@
 .popup-item {
-  width: 497px;
+  width: 90vw;
+  height: 90vh;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -12,6 +13,11 @@
   overflow: hidden;
   visibility: hidden;
   height: 0;
+
+  .wrapper--max-width {
+    width: auto;
+    max-width: 986px;
+  }
 
   @include atMobile{
     width: 100vw;
@@ -28,10 +34,11 @@
   &.active {
     overflow: visible;
     visibility: visible;
-    height: auto;
+    height: 90vh;
 
     @include atMobile{
       overflow: auto;
+      height: 100vh;
     };
   }
 
@@ -51,8 +58,6 @@
   }
 
   &__img {
-    width: 128px;
-    margin: 0 auto;
     display: block;
     margin-bottom: 10px;
 
@@ -60,10 +65,14 @@
       max-width: 100%;
       height: auto;
     }
+
+    @include atMobile{
+      text-align: center;
+    };
   }
 
   &__desc {
-    width: 256px;
+    width: 55%;
 
     @include atMobile{
       width: 100%;
@@ -125,6 +134,7 @@
     img {
       max-width: 100%;
       height: auto;
+      margin:  0 auto;
     }
   }
 
