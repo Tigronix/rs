@@ -6,7 +6,7 @@
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(#000, .69);
+  background: rgba($black2, .69);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@
     font-size: 15px;
     line-height: 14px;
     letter-spacing: 1px;
-    color: #000;
+    color: $black2;
     text-transform: uppercase;
     margin-bottom: 63px;
 
@@ -68,7 +68,7 @@
   &__sale {
     font-size: 20px;
     line-height: 18px;
-    color: #000;
+    color: $black2;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 63px;

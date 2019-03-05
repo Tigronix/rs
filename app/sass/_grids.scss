@@ -20,7 +20,7 @@
     &.active {
       .grids {
         &__rectangle {
-          background: #000;
+          background: $black2;
         }
       }
     }
@@ -51,6 +51,6 @@
   }
 
   &__rectangle {
-    background: #c5c4c4;
+    background: $grey3;
   }
 }

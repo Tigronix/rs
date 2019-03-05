@@ -2,7 +2,7 @@
   &--color-white {
     .nav__link {
       &:after {
-        background: #fff;
+        background: $white1;
       }
     }
   }
@@ -20,7 +20,7 @@
   &__link {
     display: inline-block;
     font-size: 12px;
-    color: #fff;
+    color: $white1;
     text-transform: uppercase;
     text-decoration: none;
     @include akrobat;
@@ -32,7 +32,7 @@
       margin: 0 auto;
       width: 0;
       height: 1px;
-      background: #000;
+      background: $black2;
       transition: width .3s;
       transform: translateY(3px);
     }
@@ -77,9 +77,9 @@
     height: 15px;
     display: block;
     border-radius: 50%;
-    background: #005952;
+    background: $green;
     font-size: 11px;
-    color: #fff;
+    color: $white1;
     @include akrobat;
     display: flex;
     justify-content: center;

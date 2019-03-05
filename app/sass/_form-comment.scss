@@ -9,7 +9,7 @@
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 1px;
-    color: #000;
+    color: $black2;
     text-transform: uppercase;
     margin-bottom: 50px;
 
@@ -21,7 +21,7 @@
   }
 
   &__wrapper {
-    background: #ebebeb;
+    background: $grey1;
     padding: 0 80px 26px 80px;
 
     @include atMobile{
@@ -102,7 +102,7 @@
 
   &__info {
     font-size: 16px;
-    color: #000;
+    color: $black2;
 
     @include atMobile{
       margin-bottom: 15px;

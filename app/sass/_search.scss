@@ -1,5 +1,5 @@
 .search {
-  background: #e2e2e2;
+  background: $grey2;
   padding: 32px 0 43px 0;
   position: fixed;
   left: 0;
@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 24px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $white1;
     margin-bottom: 60px;
 
     @include atMobile{
@@ -34,7 +34,7 @@
 
   &__header-text {
     font-size: 14px;
-    color: #000;
+    color: $black2;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-left: 60px;
@@ -43,14 +43,14 @@
   }
 
   &__logo {
-    color: #fff;
+    color: $white1;
     font-size: 25px;
     line-height: 20px;
   }
 
   &__close {
     font-size: 10px;
-    color: #fff;
+    color: $white1;
     margin-left: auto;
     border: 10px solid transparent;
 
@@ -75,11 +75,11 @@
     line-height: 18px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #000;
+    color: $black2;
     text-transform: uppercase;
     opacity: 0.5;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(#000, 0.16);
+    border-bottom: 1px solid rgba($black2, 0.16);
     margin-bottom: 40px;
 
     &--link {
@@ -154,7 +154,7 @@
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 1px;
-    color: #626567;
+    color: $black-grey;
     text-transform: uppercase;
     width: 160px;
     margin: 0 auto;
@@ -180,7 +180,7 @@
 
     @include fromVerticalTablet{
       &:hover {
-        color: #000;
+        color: $black2;
       }
     };
   }
@@ -201,7 +201,7 @@
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 1px;
-    color: #000;
+    color: $black2;
     text-transform: uppercase;
     transition: color .3s;
     display: inline-block;
@@ -214,13 +214,13 @@
       margin: 0 auto;
       height: 1px;
       width: 0;
-      background: #603913;
+      background: $brown;
       transition: width .3s;
     }
 
     @include fromVerticalTablet{
       &:hover {
-        color: #603913;
+        color: $brown;
 
         &:after {
           width: 100%;

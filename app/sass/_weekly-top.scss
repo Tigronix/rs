@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid #ff982b;
+    border: 1px solid $orange1;
 
     @include atMobile{
       display: block;
@@ -28,7 +28,7 @@
 
   &__info {
     width: 44.21906693711968%;
-    background: #ff982b;
+    background: $orange1;
     padding: 47px 30px 15px 30px;
     text-align: center;
 
@@ -99,7 +99,7 @@
     font-size: 14px;
     font-weight: bold;
     line-height: 18px;
-    color: #fff;
+    color: $white1;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 68px;
@@ -112,7 +112,7 @@
   &__desc {
     font-size: 18px;
     line-height: 18px;
-    color: #fff;
+    color: $white1;
     letter-spacing: 1px;
     text-transform: uppercase;
     width: 73%;

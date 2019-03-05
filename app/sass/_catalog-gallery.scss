@@ -43,7 +43,7 @@
     font-size: 15px;
     line-height: 14px;
     letter-spacing: 1px;
-    color: #000;
+    color: $black2;
     margin-bottom: 14px;
     text-align: center;
   }
@@ -85,7 +85,7 @@
     align-items: center;
     margin-bottom: 14px;
     text-decoration: none;
-    color: #000;
+    color: $black2;
     text-transform: uppercase;
 
     &:last-child {
@@ -93,25 +93,25 @@
     }
 
     &--black {
-      background: #000;
-      color: #fff;
-      border-color: #000;
+      background: $black2;
+      color: $white1;
+      border-color: $black2;
       @include akrobat;
       font-weight: 500;
       transition: background .3s, color .3s, box-shadow .1s;
 
       @include fromVerticalTablet{
         &:hover {
-          background: #fff;
-          color: #000;
-          box-shadow: inset 0 0 0 5px #000;
+          background: $white1;
+          color: $black2;
+          box-shadow: inset 0 0 0 5px $black2;
         }
       };
     }
   }
 
   &__quantity-wrap {
-    color: #000;
+    color: $black2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,16 +133,16 @@
     @include akrobat;
     font-size: 12px;
     line-height: 18px;
-    color: #000;
+    color: $black2;
     letter-spacing: 1px;
     transition: background .3s, color .3s, box-shadow .1s;
     margin-bottom: 9px;
 
     @include fromVerticalTablet{
       &:hover {
-        background: #000;
-        color: #fff;
-         box-shadow: inset 0 0 0 5px #fff;
+        background: $black2;
+        color: $white1;
+         box-shadow: inset 0 0 0 5px $white1;
       }
     };
   }

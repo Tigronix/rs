@@ -7,16 +7,16 @@
   @include akrobat;
   font-size: 21px;
   line-height: 18px;
-  color: #fff;
+  color: $white1;
   letter-spacing: 2.6px;
   text-transform: uppercase;
   transition: background .3s, box-shadow .1s, color .3s;
 
   @include fromVerticalTablet{
     &:hover {
-      background: #000;
-      color: #fff;
-      box-shadow: inset 0 0 0 5px #fff;
+      background: $black2;
+      color: $white1;
+      box-shadow: inset 0 0 0 5px $white1;
       border-color: transparent;
     }
   };
@@ -24,35 +24,35 @@
   &--black {
     font-size: 12px;
     letter-spacing: 1px;
-    color: #fff;
+    color: $white1;
     text-transform: uppercase;
-    background: #000;
-    box-shadow: inset 0 0 0 0px #000;
+    background: $black2;
+    box-shadow: inset 0 0 0 0px $black2;
     border: none;
 
     @include fromVerticalTablet{
       &:hover {
-        background: #fff;
-        color: #000;
-        box-shadow: inset 0 0 0 5px #000;
+        background: $white1;
+        color: $black2;
+        box-shadow: inset 0 0 0 5px $black2;
         border-color: transparent;
       }
     };
   }
 
   &--orange {
-    background-color: #c75427;
+    background-color: $orange2;
     @include akrobat;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 1px;
-    color: #fff;
+    color: $white1;
     text-transform: uppercase;
 
     @include fromVerticalTablet{
       &:hover {
-        background: #000;
-        box-shadow: inset 0 0 0 5px #c75427;
+        background: $black2;
+        box-shadow: inset 0 0 0 5px $orange2;
         border-color: transparent;
       }
     };

@@ -48,7 +48,7 @@
       top: 0;
       right: 0;
       bottom: 0;
-      background: rgba(#000, .6);
+      background: rgba($black2, .6);
       opacity: 0;
       transition: opacity .3s;
     }
@@ -66,7 +66,7 @@
 
   &__icon {
     font-size: 22px;
-    color: #fff;
+    color: $white1;
     position: absolute;
     left: 50%;
     top: 50%;

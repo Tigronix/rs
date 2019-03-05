@@ -1,6 +1,6 @@
 .main-menu {
   display: none;
-  background: #7d7d7d;
+  background: $grey4;
   position: fixed;
   left: 0;
   top: 0;
@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $white1;
     padding-bottom: 24px;
     margin-bottom: 69px;
 
@@ -45,7 +45,7 @@
 
   &__text-styles {
     font-size: 14px;
-    color: #fff;
+    color: $white1;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 
@@ -56,7 +56,7 @@
 
   &__close {
     font-size: 10px;
-    color: #fff;
+    color: $white1;
     margin-left: auto;
     border: 10px solid transparent;
     transform: translate(10px, 0px);
@@ -69,13 +69,13 @@
   &__head {
     font-size: 12px;
     line-height: 18px;
-    color: rgba(#fff, 0.5);
+    color: rgba($white1, 0.5);
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 13px;
-    border-bottom: 1px solid rgba(#fff, 0.5);
+    border-bottom: 1px solid rgba($white1, 0.5);
     margin-bottom: 40px;
 
     @include atMobile{
@@ -114,7 +114,7 @@
       bottom: 0;
       width: 1px;
       height: 100%;
-      background: #a5a5a5;
+      background: $grey5;
     }
   }
 
@@ -141,12 +141,12 @@
     align-items: center;
     font-size: 14px;
     line-height: 18px;
-    color: #fff;
+    color: $white1;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 55px;
     padding-bottom: 40px;
-    border-bottom: 1px solid rgba(#fff, 0.5);
+    border-bottom: 1px solid rgba($white1, 0.5);
 
     @include atMobile{
       margin-bottom: 15px;
@@ -175,7 +175,7 @@
     @include akrobat;
     font-size: 21px;
     line-height: 18px;
-    color: #fff;
+    color: $white1;
     letter-spacing: 1px;
     text-transform: uppercase;
     opacity: 0.5;
@@ -209,7 +209,7 @@
       margin: 0 auto;
       width: 0;
       height: 1px;
-      background: #fff;
+      background: $white1;
       transition: width .3s;
     }
 
@@ -224,7 +224,7 @@
 
   &__item {
     padding-bottom: 56px;
-    border-bottom: 1px solid rgba(#fff, 0.5);
+    border-bottom: 1px solid rgba($white1, 0.5);
     margin-bottom: 40px;
 
     @include atMobile{

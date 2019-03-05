@@ -23,7 +23,7 @@
 
   &__header-text {
     font-size: 14px;
-    color: #000;
+    color: $black2;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 
@@ -61,7 +61,7 @@
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 1px;
-    color: #7d7d7d;
+    color: $grey4;
     transition: color .3s;
 
     &:after {
@@ -70,13 +70,13 @@
       margin: 0 auto;
       width: 0;
       height: 1px;
-      background: #000;
+      background: $black2;
       transition: width .3s;
     }
 
     @include fromVerticalTablet{
       &:hover {
-        color: #000;
+        color: $black2;
 
         &:after {
           width: 100%;
@@ -122,7 +122,7 @@
 
     @include fromVerticalTablet{
       &:hover {
-        color: #fff;
+        color: $white1;
 
         .blog {
           &__category, &__title {
@@ -144,7 +144,7 @@
     bottom: 0;
     right: 0;
     height: 204px;
-    background: rgba(#000, 0.8);
+    background: rgba($black2, 0.8);
     padding: 30px;
   }
 
@@ -152,7 +152,7 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
-    color: #7d7d7d;
+    color: $grey4;
     letter-spacing: 1px;
     @include akrobat;
     text-transform: uppercase;
@@ -163,7 +163,7 @@
   &__title {
     font-size: 12px;
     line-height: 18px;
-    color: #fff;
+    color: $white1;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 11px;

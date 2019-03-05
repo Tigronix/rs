@@ -10,7 +10,7 @@
 
   &__btn {
     font-size: 14px;
-    color: #000;
+    color: $black2;
     transform: translateY(3px);
   }
 
@@ -47,7 +47,7 @@
 
     &.active {
       &:after {
-        background: #000;
+        background: $black2;
       }
     }
   }

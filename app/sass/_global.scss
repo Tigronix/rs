@@ -40,7 +40,7 @@ button {
 		font-size: 20px;
 		font-weight: 900;
 		letter-spacing: 4px;
-		color: #000;
+		color: $black2;
 		margin-bottom: 26px;
 	};
 
@@ -53,7 +53,7 @@ button {
 	@include akrobat;
 	font-size: 14px;
 	line-height: 21px;
-	color: #000;
+	color: $black2;
 	margin-bottom: 15px;
 
 	&:last-child {

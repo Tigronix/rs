@@ -1,6 +1,6 @@
 .page-footer {
   height: 130px;
-  background: #000;
+  background: $black2;
 
   @include atMobile{
     text-align: center;
@@ -54,7 +54,7 @@
     @include akrobat;
     font-size: 12px;
     line-height: 18px;
-    color: #fff;
+    color: $white1;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
@@ -69,7 +69,7 @@
     @include fromVerticalTablet{
       &:hover {
         color: #ff921e;
-        border-color: #fff;
+        border-color: $white1;
       }
     };
   }

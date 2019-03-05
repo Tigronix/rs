@@ -1,7 +1,7 @@
 .comments {
 
   &__wrapper {
-    background: #ebebeb;
+    background: $grey1;
     padding: 56px 80px 24px 80px;
 
     @include atMobile{
@@ -13,7 +13,7 @@
 
   &__head {
     font-size: 14px;
-    color: #000;
+    color: $black2;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-bottom: 60px;
@@ -42,7 +42,7 @@
     @include akrobat;
     font-size: 14px;
     line-height: 21px;
-    color: #000;
+    color: $black2;
   }
 
   &__header-text {

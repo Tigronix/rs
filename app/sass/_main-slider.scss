@@ -22,7 +22,7 @@
   &__content {
     width: 746px;
     height: 305px;
-    background: rgba(#d5171d, .95);
+    background: rgba($red, .95);
     padding-left: 137px;
     padding-top: 50px;
 
@@ -42,7 +42,7 @@
     font-size: 60px;
     font-weight: bold;
     font-style: italic;
-    color: #fff;
+    color: $white1;
     text-transform: uppercase;
     margin-bottom: 10px;
     letter-spacing: 8px;
@@ -57,7 +57,7 @@
   &__title {
     @include akrobat;
     font-size: 40px;
-    color: #fff;
+    color: $white1;
     text-transform: uppercase;
     margin-bottom: 27px;
     letter-spacing: 5px;

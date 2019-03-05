@@ -1,5 +1,5 @@
 .blog-in {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid $white1;
 
   &__header {
     height: 320px;
@@ -23,7 +23,7 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
-    color: #fff;
+    color: $white1;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
@@ -39,7 +39,7 @@
 
   &__wrapper-content {
     margin-top: -44px;
-    background: #ebebeb;
+    background: $grey1;
     position: relative;
     z-index: 10;
     padding: 40px;
@@ -54,7 +54,7 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
-    color: #7d7d7d;
+    color: $grey4;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 32px;
@@ -100,7 +100,7 @@
       @include akrobat;
       font-size: 14px;
       line-height: 21px;
-      color: #000;
+      color: $black2;
       margin-bottom: 25px;
       text-transform: uppercase;
 
@@ -113,7 +113,7 @@
       @include akrobat;
       font-size: 14px;
       line-height: 21px;
-      color: #000;
+      color: $black2;
     }
 
     img {
@@ -131,7 +131,7 @@
       @include akrobat;
       font-size: 14px;
       line-height: 21px;
-      color: #000;
+      color: $black2;
     }
 
     ul {
@@ -150,7 +150,7 @@
           content: '';
           width: 2px;
           height: 2px;
-          background: #000;
+          background: $black2;
           position: absolute;
           left: 0;
           top: 11px;

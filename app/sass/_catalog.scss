@@ -23,7 +23,7 @@
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 1px;
-    color: #000;
+    color: $black2;
     text-transform: uppercase;
   }
 
@@ -32,12 +32,12 @@
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 1px;
-    color: #7d7d7d;
+    color: $grey4;
     font-weight: 500;
     text-transform: uppercase;
 
     span {
-      color: #000;
+      color: $black2;
     }
   }
 

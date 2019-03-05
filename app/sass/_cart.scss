@@ -22,7 +22,7 @@
     font-size: 15px;
     line-height: 14px;
     letter-spacing: 1px;
-    color: #000;
+    color: $black2;
     text-transform: uppercase;
 
     @include atMobile{
@@ -45,10 +45,10 @@
 
     @include fromVerticalTablet{
       &:hover {
-        color: #000;
+        color: $black2;
 
         .cart__back-to-shop-icon {
-          color: #000;
+          color: $black2;
         }
       }
     };
@@ -230,7 +230,7 @@
   &__head {
     font-size: 15px;
     line-height: 14px;
-    color: #000;
+    color: $black2;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -252,7 +252,7 @@
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 1px;
-    color: #000;
+    color: $black2;
     text-transform: uppercase;
   }
 
@@ -263,7 +263,7 @@
     font-size: 18px;
     line-height: 18px;
     @include akrobat;
-    color: #000;
+    color: $black2;
     letter-spacing: 1px;
 
     @include atMobile {
@@ -332,7 +332,7 @@
   }
 
   &__total-summ, &__value {
-    color: #000;
+    color: $black2;
   }
 
   &__reminder {

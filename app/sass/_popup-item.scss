@@ -7,7 +7,7 @@
   border: 1px solid #d4d4d4;
   padding: 25px 37px 20px 37px;
   z-index: 999;
-  background: rgba(#fcfcfc, 0.94);
+  background: rgba($white2, 0.94);
   z-index: 999;
   overflow: hidden;
   visibility: hidden;
@@ -88,7 +88,7 @@
   &__header {
     font-size: 16px;
     line-height: 18px;
-    color: #000;
+    color: $black2;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -111,7 +111,7 @@
       @include akrobat;
       font-size: 17px;
       line-height: 24px;
-      color: #000;
+      color: $black2;
       margin-bottom: 13px;
 
       &:last-child {
@@ -136,7 +136,7 @@
     border: 1px solid #ececec;
     display: block;
     text-align: center;
-    background: #fcfcfc;
+    background: $white2;
 
     img {
       max-width: 100%;
@@ -223,7 +223,7 @@
   &__close {
     width: 16px;
     height: 16px;
-    background: #fff url(../img/popup-close--black.png) no-repeat center;
+    background: $white1 url(../img/popup-close--black.png) no-repeat center;
     background-size: 93% auto;
     position: absolute;
     right: -20px;
